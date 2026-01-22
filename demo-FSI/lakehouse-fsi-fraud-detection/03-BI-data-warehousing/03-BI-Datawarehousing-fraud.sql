@@ -74,9 +74,9 @@
 -- MAGIC
 -- MAGIC By leveraging auto-completion and the schema browser, we can start running adhoc queries on top of our data.
 -- MAGIC
--- MAGIC While this is ideal for Data Analyst to start analysing our fraud dataset, other personas can also leverage DBSQL to track our data ingestion pipeline, the data quality, model behavior etc.
+-- MAGIC While this is ideal for Data Analyst to start analyzing our fraud dataset, other personas can also leverage DBSQL to track our data ingestion pipeline, the data quality, model behavior etc.
 -- MAGIC
--- MAGIC Open the [Queries menu](/sql/queries) to start writting your first analysis.
+-- MAGIC Open the [Queries menu](/sql/queries) to start writing your first analysis.
 
 -- COMMAND ----------
 

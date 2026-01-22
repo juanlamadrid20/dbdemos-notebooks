@@ -91,11 +91,11 @@
 -- MAGIC * Data Analyst have READ access to the Data Engineering and Feature Tables and can ingest/transform additional data in a separate schema.
 -- MAGIC * Data is masked/anonymized dynamically based on each user access level
 -- MAGIC
--- MAGIC This is made possible by Unity Catalog. When tables are saved in the Unity Catalog, they can be made accessible to the entire organization, cross-workpsaces and cross users.
+-- MAGIC This is made possible by Unity Catalog. When tables are saved in the Unity Catalog, they can be made accessible to the entire organization, cross-workspaces and cross users.
 -- MAGIC
--- MAGIC Unity Catalog is key for data governance, including creating data products or organazing teams around datamesh. It brings among other:
+-- MAGIC Unity Catalog is key for data governance, including creating data products or organizing teams around data mesh. It brings among other:
 -- MAGIC
--- MAGIC * Fined grained ACL
+-- MAGIC * Fine-grained ACL
 -- MAGIC * Audit log
 -- MAGIC * Data lineage
 -- MAGIC * Data exploration & discovery
@@ -271,20 +271,20 @@ SELECT * FROM parts_secured;
 -- MAGIC
 -- MAGIC ### Secure external location (S3/ADLS/GCS)
 -- MAGIC
--- MAGIC Unity Catatalog let you secure your managed table but also your external locations:  `dbdemos.intall('uc-02-external-location')`
+-- MAGIC Unity Catalog lets you secure your managed table but also your external locations:  `dbdemos.intall('uc-02-external-location')`
 -- MAGIC
 -- MAGIC ### Lineage 
 -- MAGIC
 -- MAGIC UC automatically captures table dependencies and let you track how your data is used, including at a row level: `dbdemos.intall('uc-03-data-lineage')`
 -- MAGIC
--- MAGIC This leat you analyze downstream impact, or monitor sensitive information across the entire organization (GDPR).
+-- MAGIC This lets you analyze downstream impact, or monitor sensitive information across the entire organization (GDPR).
 -- MAGIC
 -- MAGIC
 -- MAGIC ### Audit log
 -- MAGIC
 -- MAGIC UC captures all events. Need to know who is accessing which data? Query your audit log:  `dbdemos.intall('uc-04-audit-log')`
 -- MAGIC
--- MAGIC This leat you analyze downstream impact, or monitor sensitive information across the entire organization (GDPR).
+-- MAGIC This lets you analyze downstream impact, or monitor sensitive information across the entire organization (GDPR).
 -- MAGIC
 -- MAGIC ### Upgrading to UC
 -- MAGIC

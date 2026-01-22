@@ -78,14 +78,14 @@
       "publish_on_website": True, 
       "add_cluster_setup_cell": True, 
       "title":  "Deploy the pipeline for inference", 
-      "description": "Run batch/streaming or realtime inference (Model Endpoint)"
+      "description": "Run batch/streaming or real-time inference (Model Endpoint)"
     },
     {
       "path": "04-explaining-inference", 
       "pre_run": True, 
       "publish_on_website": True, 
       "add_cluster_setup_cell": True, 
-      "title":  "Hihlight default in PCB image", 
+      "title":  "Highlight default in PCB image", 
       "description": "Add model explainer to highglight pixels having a potential default"
     },
     {

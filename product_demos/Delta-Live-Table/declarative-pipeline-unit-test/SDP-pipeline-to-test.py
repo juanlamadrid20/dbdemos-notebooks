@@ -49,13 +49,13 @@
 # MAGIC
 # MAGIC Theses expectations are your usual expectations, used to ensure and track data quality during the ingestion process. 
 # MAGIC
-# MAGIC We can then build DBSQL dashboard on top of it and triggers alarms when we see error in our data (ex: incompatible schema, increasing our expectation count)
+# MAGIC We can then build DBSQL dashboard on top of it and trigger alarms when we see error in our data (ex: incompatible schema, increasing our expectation count)
 
 # COMMAND ----------
 
 # DBTITLE 1,Define all our expectations as a metadata table
 # In this example, we'll store our rules as a delta table for more flexibility & reusability. 
-# While this isn't directly related to Unit test, it can also help for programatical analysis/reporting.
+# While this isn't directly related to Unit test, it can also help for programmatic analysis/reporting.
 catalog = "main__build"
 schema = dbName = db = "dbdemos_sdp_unit_test"
 
@@ -177,7 +177,7 @@ spark.createDataFrame(data=data, schema=["tag", "name", "constraint"]).write.mod
 # MAGIC
 # MAGIC Note all the transformation logic is defined under 
 # MAGIC spd-python/transformations
-# MAGIC and all the testes are defined udnder
+# MAGIC and all the testes are defined under
 # MAGIC spd-python/transformations/test
 # MAGIC
 # MAGIC

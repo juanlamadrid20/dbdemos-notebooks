@@ -7,7 +7,7 @@
 # MAGIC
 # MAGIC All we need to do now is use this model to run Inferences. A simple solution is to share the model name to our Data Engineering team and they'll be able to call this model within the pipeline they maintained. That's what we did in our Spark Declarative Pipelines pipeline!
 # MAGIC
-# MAGIC Alternatively, this can be schedule in a separate job. Here is an example to show you how MLFlow can be directly used to retriver the model and run inferences.
+# MAGIC Alternatively, this can be scheduled in a separate job. Here is an example to show you how MLFlow can be directly used to retrieve the model and run inferences.
 # MAGIC
 # MAGIC <!-- Collect usage data (view). Remove it to disable collection or disable tracker during installation. View README for more details.  -->
 # MAGIC <img width="1px" src="https://ppxrzfxige.execute-api.us-west-2.amazonaws.com/v1/analytics?category=lakehouse&notebook=04.3-running-inference&demo_name=lakehouse-retail-c360&event=VIEW">
@@ -99,7 +99,7 @@ df.head(3)
 # MAGIC
 # MAGIC Databricks also provides serverless serving.
 # MAGIC
-# MAGIC Click on model Serving, enable realtime serverless and your endpoint will be created, providing serving over REST api within a Click.
+# MAGIC Click on model Serving, enable real-time serverless and your endpoint will be created, providing serving over REST API within a click.
 # MAGIC
 # MAGIC Databricks Serverless offer autoscaling, including downscaling to zero when you don't have any traffic to offer best-in-class TCO while keeping low-latencies model serving.
 # MAGIC
@@ -165,11 +165,11 @@ score_model(dataset)
 # MAGIC
 # MAGIC ## Automate action to reduce churn based on predictions
 # MAGIC
-# MAGIC We now have an end 2 end data pipeline analizing and predicting churn. We can now easily trigger actions to reduce the churn based on our business:
+# MAGIC We now have an end-to-end data pipeline analyzing and predicting churn. We can now easily trigger actions to reduce the churn based on our business:
 # MAGIC
-# MAGIC - Send targeting email campaign to the customer the most likely to churn
-# MAGIC - Phone campaign to discuss with our customers and understand what's going
-# MAGIC - Understand what's wrong with our line of product and fixing it
+# MAGIC - Send targeting email campaign to the customers most likely to churn
+# MAGIC - Phone campaign to discuss with our customers and understand what's going on
+# MAGIC - Understand what's wrong with our line of products and fix it
 # MAGIC
 # MAGIC These actions are out of the scope of this demo and simply leverage the Churn prediction field from our ML model.
 # MAGIC
@@ -177,7 +177,7 @@ score_model(dataset)
 # MAGIC
 # MAGIC Of course, this churn prediction can be re-used in our dashboard to analyse future churn and measure churn reduction. 
 # MAGIC
-# MAGIC The pipeline created with the Lakehouse will offer a strong ROI: it took us a few hours to setup this pipeline end 2 end and we have potential gain for $129,914 / month!
+# MAGIC The pipeline created with the Lakehouse will offer a strong ROI: it took us a few hours to set up this pipeline end-to-end and we have potential gain of $129,914 / month!
 # MAGIC
 # MAGIC <img width="800px" src="https://raw.githubusercontent.com/QuentinAmbard/databricks-demo/main/retail/resources/images/lakehouse-retail/lakehouse-retail-churn-dbsql-prediction-dashboard.png">
 # MAGIC

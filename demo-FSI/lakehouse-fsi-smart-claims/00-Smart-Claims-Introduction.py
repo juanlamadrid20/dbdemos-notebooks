@@ -39,13 +39,13 @@
 # MAGIC
 # MAGIC <img width="800px" src="https://github.com/databricks-demos/dbdemos-resources/blob/main/images/fsi/smart-claims/smart_claims_process.png?raw=true" />
 # MAGIC
-# MAGIC We will consume informations from our main operational system:
+# MAGIC We will consume information from our main operational system:
 # MAGIC
 # MAGIC - Customer profile information including their policy details
 # MAGIC - Customer Telematics: an app that collects driving metrics (location, speed, how you turn, braking habits...)
 # MAGIC - Claims details: contains the claim information, including damage photos (car crash).
 # MAGIC
-# MAGIC This information is then anlyzed and returned to our operational system to act on the claim:
+# MAGIC This information is then analyzed and returned to our operational system to act on the claim:
 # MAGIC - Claims images are analyzed with AI to ensure consistency with declaration
 # MAGIC - Rule engine review the claims and customer profile, providing recommendation and taking automated actions.
 
@@ -74,8 +74,8 @@
 # MAGIC ### What is Claims Automation
 # MAGIC   * Automating certain aspects of the claims processing pipeline to reduce dependence on human personnel especially in mundane predictable tasks
 # MAGIC   * Augmenting additional info/insights to existing claims data to aid/expedite human investigation, eg. Recommend Next Best Action
-# MAGIC   * Providing greater explainability of the sitution/case for better decision making in the human workflow
-# MAGIC   * Serving as a sounding board to avoid human error/bias as well as providing an audit trail for personel in Claims Roles 
+# MAGIC   * Providing greater explainability of the situation/case for better decision making in the human workflow
+# MAGIC   * Serving as a sounding board to avoid human error/bias as well as providing an audit trail for personnel in Claims Roles 
 
 # COMMAND ----------
 
@@ -133,7 +133,7 @@
 
 # MAGIC %md-sandbox
 # MAGIC
-# MAGIC ## 2: AI - Detect the the severity of the damage in the car accident
+# MAGIC ## 2: AI - Detect the severity of the damage in the car accident
 # MAGIC
 # MAGIC <img src="https://github.com/databricks-demos/dbdemos-resources/blob/main/images/fsi/smart-claims/fsi-claims-flow-4.png?raw=true" style="float: right" width="700px">
 # MAGIC
@@ -179,7 +179,7 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Open the [05-Workflow-Orchestration]($./05-Workflow-Orchestration/05-Workflow-Orchestration-Smart-Claims)  notebook to schedule or <a dbdemos-workflow-id="init-job" href="#job/629612721485383/tasks" target="_blank">access your workflow</a> (data ingetion, model re-training, dashboard update etc)
+# MAGIC Open the [05-Workflow-Orchestration]($./05-Workflow-Orchestration/05-Workflow-Orchestration-Smart-Claims)  notebook to schedule or <a dbdemos-workflow-id="init-job" href="#job/629612721485383/tasks" target="_blank">access your workflow</a> (data ingestion, model re-training, dashboard update etc)
 
 # COMMAND ----------
 

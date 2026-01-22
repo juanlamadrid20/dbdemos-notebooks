@@ -16,8 +16,8 @@
 # MAGIC
 # MAGIC As reminder, we have multiple data sources coming from different system:
 # MAGIC
-# MAGIC - Customer profile data *(name, age, adress etc)*
-# MAGIC - Orders history *(what our customer bough over time)*
+# MAGIC - Customer profile data *(name, age, address etc)*
+# MAGIC - Orders history *(what our customer bought over time)*
 # MAGIC - Events from our application *(when was the last time customers used the application, typically this could be a stream from a Kafka queue)*
 # MAGIC
 # MAGIC
@@ -39,7 +39,7 @@
 # MAGIC %md-sandbox
 # MAGIC ## Building a Spark Data pipeline with Delta Lake
 # MAGIC
-# MAGIC In this example, we'll implement a end 2 end pipeline consuming our customers information. We'll use the medaillon architecture but could build star schema, data vault or any other modelisation.
+# MAGIC In this example, we'll implement an end-to-end pipeline consuming our customers information. We'll use the medallion architecture but could build star schema, data vault or any other modelization.
 # MAGIC
 # MAGIC
 # MAGIC
@@ -49,7 +49,7 @@
 # MAGIC  * Running DELETE/UPDATE/MERGE over files
 # MAGIC  * Governance & schema evolution
 # MAGIC  * Performance ingesting millions of small files on cloud buckets
-# MAGIC  * Processing & analysing unstructured data (image, video...)
+# MAGIC  * Processing & analyzing unstructured data (image, video...)
 # MAGIC  * Switching between batch or streaming depending of your requirement...
 # MAGIC
 # MAGIC ## Solving these challenges with Delta Lake
@@ -63,7 +63,7 @@
 # MAGIC * **ACID transactions** (Multiple writers can simultaneously modify a data set)
 # MAGIC * **Full DML support** (UPDATE/DELETE/MERGE)
 # MAGIC * **BATCH and STREAMING** support
-# MAGIC * **Data quality** (expectatiosn, Schema Enforcement, Inference and Evolution)
+# MAGIC * **Data quality** (expectations, Schema Enforcement, Inference and Evolution)
 # MAGIC * **TIME TRAVEL** (Look back on how data looked like in the past)
 # MAGIC * **Performance boost** with ZOrder, data skipping and Caching, solves small files issue 
 # MAGIC </div>
@@ -77,7 +77,7 @@
 # MAGIC
 # MAGIC This information will then be used to build our DBSQL dashboard to track customer behavior and churn.
 # MAGIC
-# MAGIC Let'simplement the following flow: 
+# MAGIC Let's implement the following flow: 
 # MAGIC  
 # MAGIC <div><img width="1100px" src="https://raw.githubusercontent.com/QuentinAmbard/databricks-demo/main/retail/resources/images/lakehouse-retail/lakehouse-retail-churn-de-delta.png"/></div>
 # MAGIC
@@ -175,13 +175,13 @@ ingest_folder(f'{volume_folder}/users', 'json',  'spark_churn_users_bronze').awa
 
 # MAGIC %md-sandbox
 # MAGIC
-# MAGIC ## ![](https://pages.databricks.com/rs/094-YMS-629/images/delta-lake-tiny-logo.png) 2/ Silver data: anonimized table, date cleaned
+# MAGIC ## ![](https://pages.databricks.com/rs/094-YMS-629/images/delta-lake-tiny-logo.png) 2/ Silver data: anonymized table, date cleaned
 # MAGIC
 # MAGIC <img width="700px" style="float:right" src="https://raw.githubusercontent.com/QuentinAmbard/databricks-demo/main/retail/resources/images/lakehouse-retail/lakehouse-retail-churn-de-delta-2.png"/>
 # MAGIC
 # MAGIC We can chain these incremental transformation between tables, consuming only new data.
 # MAGIC
-# MAGIC This can be triggered in near realtime, or in batch fashion, for example as a job running every night to consume daily data.
+# MAGIC This can be triggered in near real-time, or in batch fashion, for example as a job running every night to consume daily data.
 
 # COMMAND ----------
 
@@ -232,7 +232,7 @@ ingest_folder(f'{volume_folder}/users', 'json',  'spark_churn_users_bronze').awa
 # MAGIC
 # MAGIC We're now ready to create the features required for our Churn prediction.
 # MAGIC
-# MAGIC We need to enrich our user dataset with extra information which our model will use to help predicting churn, sucj as:
+# MAGIC We need to enrich our user dataset with extra information which our model will use to help predict churn, such as:
 # MAGIC
 # MAGIC * last command date
 # MAGIC * number of item bought
@@ -267,11 +267,11 @@ display(spark.table("spark_churn_features"))
 # MAGIC
 # MAGIC <img width="700px" style="float:right" src="https://raw.githubusercontent.com/QuentinAmbard/databricks-demo/main/retail/resources/images/lakehouse-retail/lakehouse-retail-churn-de-delta-5.png"/>
 # MAGIC
-# MAGIC Our Data scientist team has build a churn prediction model using Auto ML and saved it into Databricks Model registry. 
+# MAGIC Our Data Scientist team has built a churn prediction model using Auto ML and saved it into Databricks Model registry. 
 # MAGIC
-# MAGIC One of the key value of the Lakehouse is that we can easily load this model and predict our churn right into our pipeline. 
+# MAGIC One of the key values of the Lakehouse is that we can easily load this model and predict our churn right into our pipeline. 
 # MAGIC
-# MAGIC Note that we don't have to worry about the model framework (sklearn or other), MLFlow abstract that for us.
+# MAGIC Note that we don't have to worry about the model framework (sklearn or other), MLFlow abstracts that for us.
 
 # COMMAND ----------
 

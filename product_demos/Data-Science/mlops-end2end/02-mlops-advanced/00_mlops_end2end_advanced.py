@@ -34,11 +34,11 @@
 # MAGIC
 # MAGIC In the first [quickstart notebooks]($../01-mlops-quickstart/00_mlops_end2end_quickstart_presentation), we have covered a few common steps in the MLOps process. Now that you have mastered the foundation of MLOps, we'll dive into a more complete, end-to-end workflow. The end result of this process is a model used to power a dashboard for downstream business stakeholders, as well as a REST API endpoint that can make predictions in real-time.
 # MAGIC
-# MAGIC This end-to-end MLOps workflow involes:
+# MAGIC This end-to-end MLOps workflow involves:
 # MAGIC
 # MAGIC * preparing features, functions computing and persisting to an offline feature store
 # MAGIC * training a model for deployment
-# MAGIC * registering the model for its use to be goverened
+# MAGIC * registering the model for its use to be governed
 # MAGIC * validating the model in a champion-challenger analysis
 # MAGIC * invoking a trained ML model as part of a batch inference job
 # MAGIC * deploying features for real-time feature lookup
@@ -77,7 +77,7 @@
 # MAGIC
 # MAGIC Let's see how we can implement such a model, but also provide our marketing and renewal team with Dashboards to track and analyze our Churn prediction.
 # MAGIC
-# MAGIC Ultimately, you'll build able to build a complete DBSQL Churn Dashboard containing all our customer & churn information, but also start a Genie space to ask any question using plain english!
+# MAGIC Ultimately, you'll be able to build a complete DBSQL Churn Dashboard containing all our customer & churn information, but also start a Genie space to ask any question using plain English!
 
 # COMMAND ----------
 

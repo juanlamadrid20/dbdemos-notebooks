@@ -136,7 +136,7 @@ class DBDemos():
   @staticmethod
   def init_experiment_for_batch(demo_name, experiment_name):
     import mlflow
-    #You can programatically get a PAT token with the following
+    #You can programmatically get a PAT token with the following
     from databricks.sdk import WorkspaceClient
     w = WorkspaceClient()
     xp_root_path = f"/Shared/dbdemos/experiments/{demo_name}"

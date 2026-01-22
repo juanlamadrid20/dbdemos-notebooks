@@ -336,7 +336,7 @@ model
 # MAGIC %md
 # MAGIC ## Confusion matrix, ROC, and Precision-Recall curves for validation data
 # MAGIC
-# MAGIC We show the model's confusion matrix, RO,C and Precision-Recall curves on the validation data.
+# MAGIC We show the model's confusion matrix, ROC, and Precision-Recall curves on the validation data.
 # MAGIC
 # MAGIC For the plots evaluated on the training and the test data, check the artifacts on the MLflow run page.
 

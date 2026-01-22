@@ -36,7 +36,7 @@
 # MAGIC
 # MAGIC ## This Notebook
 # MAGIC
-# MAGIC This notebook will guide you, the amazing Databricks afficianado, through deploying a Databricks AI/BI project. Feel free to follow step-by-step to get comfortable with the project. But, just know that by installing this project, its dashboard and Genie Dataroom are already available at **these links**.
+# MAGIC This notebook will guide you, the amazing Databricks aficionado, through deploying a Databricks AI/BI project. Feel free to follow step-by-step to get comfortable with the project. But, just know that by installing this project, its dashboard and Genie Dataroom are already available at **these links**.
 # MAGIC
 # MAGIC In the following sections, this notebook will guide you through at a high-level:
 # MAGIC 1. Data Ingestion with **Lakeflow Connect**
@@ -65,7 +65,7 @@
 # MAGIC Databricks makes this super simple with LakeFlow Connect, a **point-and-click data ingestion solution** supporting:
 # MAGIC
 # MAGIC - Databases -- including SQL Servers and more.
-# MAGIC - Entreprise application such as Salesforce, Workday, Google Analytics or ServiceNow.
+# MAGIC - Enterprise applications such as Salesforce, Workday, Google Analytics, or ServiceNow.
 # MAGIC
 # MAGIC If you want to know more about LakeFlow Connect and how to incrementally synchronize your external table to Databricks, you can open the [Lakeflow Connect Product Tour](https://www.databricks.com/resources/demos/tours/platform/discover-databricks-lakeflow-connect-demo).
 # MAGIC
@@ -81,12 +81,12 @@
 # MAGIC
 # MAGIC <img src="https://raw.githubusercontent.com/databricks-demos/dbdemos-resources/refs/heads/main/images/aibi/dbx_aibi_uc.png" style="float: right; margin: 10px" width="500px">
 # MAGIC
-# MAGIC Once your data is ingested and ready-to-go, **Databricks Unity Catalog** provides all the key features to support your business' data governane requirements, _including but not limited to_:
+# MAGIC Once your data is ingested and ready to go, **Databricks Unity Catalog** provides all the key features to support your business's data governance requirements, _including but not limited to_:
 # MAGIC
 # MAGIC - **Fine Grained Access control on your data**: Control who can access which row or column based on your own organization
 # MAGIC - **Full lineage, from data ingestion to ML models**: Analyze all downstream impact for any legal / privacy requirements
 # MAGIC - **Audit and traceability**: Analyze who did what, when
-# MAGIC - **Support for all data assets**: Including files, table, dashboards, ML/AI models, jobs, and more! _Simplify governance, support all your teams in one place._
+# MAGIC - **Support for all data assets**: Including files, tables, dashboards, ML/AI models, jobs, and more! _Simplify governance, support all your teams in one place._
 # MAGIC
 # MAGIC Explore the data and table ingested in [Unity Catalog](/explore/data) and make sure that it looks appropriate for your organization's needs.
 # MAGIC
@@ -110,7 +110,7 @@
 # MAGIC And they live side-by-side with your data, delivering instant load and rapid interactive analysis — no matter the data or user scale.
 # MAGIC
 # MAGIC
-# MAGIC Open the <a dbdemos-dashboard-id="web-marketing" href='/sql/dashboardsv3/02ef00cc36721f9e1f2028ee75723cc1' target="_blank">Campain Marketing Dashboard to analyze & track main KPIs</a>
+# MAGIC Open the <a dbdemos-dashboard-id="web-marketing" href='/sql/dashboardsv3/02ef00cc36721f9e1f2028ee75723cc1' target="_blank">Campaign Marketing Dashboard to analyze & track main KPIs</a>
 
 # COMMAND ----------
 
@@ -124,7 +124,7 @@
 # MAGIC
 # MAGIC However, they'll likely have extra questions or followup based on the insight they see in the dashboard, like: "What the heck is wrong with my campaign, anyway?" or "What was the CTR of my campaign last month?"
 # MAGIC
-# MAGIC Open the <a dbdemos-genie-id="marketing-campaign" href='/genie/rooms/01ef775474091f7ba11a8a9d2075eb58' target="_blank">Campain Marketing Genie space to deep dive into your data</a>
+# MAGIC Open the <a dbdemos-genie-id="marketing-campaign" href='/genie/rooms/01ef775474091f7ba11a8a9d2075eb58' target="_blank">Campaign Marketing Genie space to deep dive into your data</a>
 
 # COMMAND ----------
 

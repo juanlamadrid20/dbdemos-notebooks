@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC # Churn Prediction Realtime Inference
+# MAGIC # Churn Prediction Real-time Inference
 # MAGIC
 # MAGIC We have just seen how to get predictions in batches. Now, we will deploy the features and model to make real-time predictions via a REST API call. Customer application teams can embed this predictive capability into customer-facing applications and apply a retention strategy for customers predicted to churn as they interact with the application.
 # MAGIC
@@ -451,7 +451,7 @@ if not is_smoke_test:
 # MAGIC
 # MAGIC <br>
 # MAGIC
-# MAGIC Run the next cells to call the endpoint programatically.
+# MAGIC Run the next cells to call the endpoint programmatically.
 # MAGIC
 # MAGIC
 

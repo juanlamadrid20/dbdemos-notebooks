@@ -23,7 +23,7 @@ display(dbutils.fs.ls(volume_folder))
 
 # MAGIC %md
 # MAGIC
-# MAGIC ## 1. Basic Usage: Automatic Format Dectection
+# MAGIC ## 1. Basic Usage: Automatic Format Detection
 # MAGIC
 # MAGIC One of the key advantages of `read_files` is automatic format detection. Let's try to read many file formats in our demo data folder, and use read_files to detect the file format
 
@@ -66,7 +66,7 @@ display(spark.sql(f"SELECT 'JSON Files' as source, * FROM read_files('{volume_fo
 # MAGIC
 # MAGIC Different formats have different schema inference capabilities and performance.
 # MAGIC
-# MAGIC We can also use schema hints to override the schema inferrence.
+# MAGIC We can also use schema hints to override the schema inference.
 
 # COMMAND ----------
 
@@ -110,7 +110,7 @@ SELECT
   typeof(age_group) as age_group_type, 
   typeof(creation_date) as date_type
 FROM read_files('{volume_folder}/user_parquet')
-) type_comparision
+) type_comparison
 GROUP BY format
 """))
 

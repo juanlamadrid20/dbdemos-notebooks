@@ -9,7 +9,7 @@
 # MAGIC Unity Catalog is a fine-grained governance solution for data and AI on the Databricks platform. It helps simplify security and governance of your data and AI assets by providing a central place to administer and audit access to data and AI assets.
 # MAGIC Unity Catalog is a core component of Databricks and a large portion of the current and future capabilities rely on Unity Catalog.
 # MAGIC
-# MAGIC However, many systems still leave on legacy Hive Metastore, without any advanced governance capabilities. 
+# MAGIC However, many systems still live on legacy Hive Metastore, without any advanced governance capabilities. 
 # MAGIC
 # MAGIC <strong>Databricks let you add your external Hive Metastore through Federation, making them available while benefiting from Unity Catalog capabilities!</strong>
 # MAGIC
@@ -99,7 +99,7 @@
 # MAGIC ## 2.2/ Securing federated objects
 # MAGIC The newly created catalog and databases/tables within it can be secured like any other native UC object.<br/>
 # MAGIC All the UC capabilities are available for the federated schemas tables and views. Including:
-# MAGIC - Access Cotrol
+# MAGIC - Access Control
 # MAGIC - Row level filters and Column level masking
 # MAGIC - Delta Sharing
 # MAGIC - Lineage<br/>

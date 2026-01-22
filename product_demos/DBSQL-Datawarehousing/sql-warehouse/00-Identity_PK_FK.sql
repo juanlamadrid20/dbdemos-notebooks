@@ -166,7 +166,7 @@ VALUES
 
 -- MAGIC %md ### Query the tables joining data
 -- MAGIC
--- MAGIC We can now imply query the tables to retrieve our data based on the FK:
+-- MAGIC We can now simply query the tables to retrieve our data based on the FK:
 
 -- COMMAND ----------
 

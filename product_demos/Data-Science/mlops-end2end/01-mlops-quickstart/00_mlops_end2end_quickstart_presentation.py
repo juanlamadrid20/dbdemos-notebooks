@@ -52,7 +52,7 @@
 # MAGIC
 # MAGIC The advanced section will go into more detail, including:
 # MAGIC - Model Serving
-# MAGIC - Realtime Feature serving with Online Tables
+# MAGIC - Real-time Feature serving with Online Tables
 # MAGIC - A/B testing 
 # MAGIC - Infra setup and hooks with Databricks MLOps Stack
 # MAGIC - ...

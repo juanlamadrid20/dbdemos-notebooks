@@ -223,20 +223,20 @@ SELECT * FROM churn_users_protected
 -- MAGIC
 -- MAGIC ### Secure external location (S3/ADLS/GCS)
 -- MAGIC
--- MAGIC Unity Catatalog let you secure your managed table but also your external locations:  `dbdemos.intall('uc-02-external-location')`
+-- MAGIC Unity Catalog lets you secure your managed table but also your external locations:  `dbdemos.intall('uc-02-external-location')`
 -- MAGIC
 -- MAGIC ### Lineage 
 -- MAGIC
 -- MAGIC UC automatically captures table dependencies and let you track how your data is used, including at a row level: `dbdemos.intall('uc-03-data-lineage')`
 -- MAGIC
--- MAGIC This leat you analyze downstream impact, or monitor sensitive information across the entire organization (GDPR).
+-- MAGIC This lets you analyze downstream impact, or monitor sensitive information across the entire organization (GDPR).
 -- MAGIC
 -- MAGIC
 -- MAGIC ### Audit log
 -- MAGIC
 -- MAGIC UC captures all events. Need to know who is accessing which data? Query your audit log:  `dbdemos.intall('uc-04-audit-log')`
 -- MAGIC
--- MAGIC This leat you analyze downstream impact, or monitor sensitive information across the entire organization (GDPR).
+-- MAGIC This lets you analyze downstream impact, or monitor sensitive information across the entire organization (GDPR).
 -- MAGIC
 -- MAGIC ### Upgrading to UC
 -- MAGIC

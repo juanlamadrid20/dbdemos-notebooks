@@ -6,17 +6,17 @@
 # MAGIC
 # MAGIC All our assets are ready. We now need to define when we want our SDP pipeline to kick in and refresh the tables.
 # MAGIC
-# MAGIC One option is to switch SDP pipeline in continuous mode to have a streaming pipeline, providing near-realtime insight.
+# MAGIC One option is to switch SDP pipeline in continuous mode to have a streaming pipeline, providing near-real-time insight.
 # MAGIC
 # MAGIC An alternative is to wakeup the SDP pipeline every X hours, ingest the new data (incremental) and shut down all your compute. 
 # MAGIC
 # MAGIC This is a simple configuration offering a tradeoff between uptime and ingestion latencies.
 # MAGIC
-# MAGIC In our case, we decided that the best tradoff is to ingest new data every hours:
+# MAGIC In our case, we decided that the best trade-off is to ingest new data every hour:
 # MAGIC
 # MAGIC - Start the SDP pipeline to ingest new data and refresh our tables
 # MAGIC - Refresh the DBSQL dashboard (and potentially notify downstream applications)
-# MAGIC - Retrain our model to include the lastest date and capture potential behavior change
+# MAGIC - Retrain our model to include the latest data and capture potential behavior change
 # MAGIC
 # MAGIC <!-- Collect usage data (view). Remove it to disable collection. View README for more details.  -->
 # MAGIC <img width="1px" src="https://ppxrzfxige.execute-api.us-west-2.amazonaws.com/v1/analytics?category=lakehouse&notebook=05-Workflow-orchestration-iot-turbine&demo_name=lakehouse-patient-readmission&event=VIEW">
@@ -28,7 +28,7 @@
 # MAGIC
 # MAGIC <img style="float: right; margin-left: 10px" width="600px" src="https://github.com/databricks-demos/dbdemos-resources/blob/main/images/retail/lakehouse-churn/lakehouse-retail-c360-workflow.png?raw=true" />
 # MAGIC
-# MAGIC With Databricks Data Intelligence Platform, no need for external orchestrator. We can use [Workflows](/#job/list) (available on the left menu) to orchestrate our Churn pipeline within a few click.
+# MAGIC With Databricks Data Intelligence Platform, no need for external orchestrator. We can use [Workflows](/#job/list) (available on the left menu) to orchestrate our Churn pipeline within a few clicks.
 # MAGIC
 # MAGIC
 # MAGIC
@@ -90,6 +90,6 @@
 # MAGIC %md
 # MAGIC ## Conclusion
 # MAGIC
-# MAGIC Not only does the Datatabricks Data Intelligence Platform let you ingest, analyze and infer churn, it also provides a best-in-class orchestrator to offer your business fresh insight making sure everything works as expected!
+# MAGIC Not only does the Databricks Data Intelligence Platform let you ingest, analyze and infer churn, it also provides a best-in-class orchestrator to offer your business fresh insight making sure everything works as expected!
 # MAGIC
 # MAGIC [Go back to introduction]($../00-IOT-wind-turbine-introduction-DI-platform)

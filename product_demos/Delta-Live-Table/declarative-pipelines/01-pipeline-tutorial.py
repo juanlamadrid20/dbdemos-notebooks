@@ -98,7 +98,7 @@
 
 # MAGIC %md
 # MAGIC ## Analyzing your business metrics
-# MAGIC You have everything you need! Once ready, open your <a  dbdemos-dashboard-id="bike-rental" href='/sql/dashboardsv3/01ef00cc36721f9e9f2028ee75723cc1' target="_blank">Bike Rental Business Dashboard</a> to track all your insights in realtime ! 
+# MAGIC You have everything you need! Once ready, open your <a  dbdemos-dashboard-id="bike-rental" href='/sql/dashboardsv3/01ef00cc36721f9e9f2028ee75723cc1' target="_blank">Bike Rental Business Dashboard</a> to track all your insights in real-time! 
 # MAGIC
 # MAGIC
 # MAGIC ### Next: tracking data quality

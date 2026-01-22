@@ -16,7 +16,7 @@
 # MAGIC
 # MAGIC - Use autoloader to load the binary PDFs into our first table. 
 # MAGIC - Use the `unstructured` library  to parse the text content of the PDFs.
-# MAGIC - Use `llama_index` or `Langchain` to split the texts into chuncks.
+# MAGIC - Use `llama_index` or `Langchain` to split the texts into chunks.
 # MAGIC - Compute embeddings for the chunks.
 # MAGIC - Save our text chunks + embeddings in a Delta Lake table, ready for Vector Search indexing.
 # MAGIC
@@ -49,7 +49,7 @@
 # MAGIC
 # MAGIC First, let's ingest our PDFs as a Delta Lake table with path urls and content in binary format. 
 # MAGIC
-# MAGIC We'll use [Databricks Autoloader](https://docs.databricks.com/en/ingestion/auto-loader/index.html) to incrementally ingeset new files, making it easy to incrementally consume billions of files from the data lake in various data formats. Autoloader easily ingests our unstructured PDF data in binary format.
+# MAGIC We'll use [Databricks Autoloader](https://docs.databricks.com/en/ingestion/auto-loader/index.html) to incrementally ingest new files, making it easy to incrementally consume billions of files from the data lake in various data formats. Autoloader easily ingests our unstructured PDF data in binary format.
 # MAGIC
 
 # COMMAND ----------
@@ -411,6 +411,6 @@ pprint(docs)
 # MAGIC
 # MAGIC We've seen how Databricks Lakehouse AI makes it easy to ingest and prepare your documents, and deploy a Self Managed Vector Search index on top of it with just a few lines of code and configuration.
 # MAGIC
-# MAGIC This simplifies and accelerates your data projects so that you can focus on the next step: creating your realtime chatbot endpoint with well-crafted prompt augmentation.
+# MAGIC This simplifies and accelerates your data projects so that you can focus on the next step: creating your real-time chatbot endpoint with well-crafted prompt augmentation.
 # MAGIC
 # MAGIC Open the [02-Advanced-Chatbot-Chain]($./02-Advanced-Chatbot-Chain) notebook to create and deploy a chatbot endpoint.

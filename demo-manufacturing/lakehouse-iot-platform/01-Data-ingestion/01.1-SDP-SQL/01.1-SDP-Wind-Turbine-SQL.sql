@@ -31,7 +31,7 @@
 -- MAGIC * Managing incompatible governance models from different systems
 -- MAGIC <br style="clear: both">
 -- MAGIC
--- MAGIC This results in **operational complexity** and overhead, requiring expert profile and ultimatly **putting data projects at risk**.
+-- MAGIC This results in **operational complexity** and overhead, requiring expert profile and ultimately **putting data projects at risk**.
 -- MAGIC
 -- MAGIC
 -- MAGIC <!-- Collect usage data (view). Remove it to disable collection. View README for more details.  -->
@@ -64,7 +64,7 @@
 -- MAGIC ## Building a Spark Declarative Pipeline to ingest IOT sensor and detect faulty equipments
 -- MAGIC
 -- MAGIC In this example, we'll implement a end 2 end Spark Declarative Pipeline consuming our Wind Turbine sensor data. <br/>
--- MAGIC We'll use the medaillon architecture but we could build star schema, data vault or any other modelisation.
+-- MAGIC We'll use the medallion architecture but we could build star schema, data vault or any other modelisation.
 -- MAGIC
 -- MAGIC We'll incrementally load new data with the autoloader, enrich this information and then load a model from MLFlow to perform our predictive maintenance analysis.
 -- MAGIC
@@ -126,9 +126,9 @@
 -- MAGIC
 -- MAGIC <div><img src="https://github.com/databricks-demos/dbdemos-resources/raw/main/images/manufacturing/lakehouse-iot-turbine/lakehouse-manuf-iot-turbine-2.png" width="700px" style="float: right"/></div>
 -- MAGIC
--- MAGIC To be able to analyze our data, we'll compute statistical metrics every at an ourly basis, such as standard deviation and quartiles.
+-- MAGIC To be able to analyze our data, we'll compute statistical metrics every at an hourly basis, such as standard deviation and quartiles.
 -- MAGIC
--- MAGIC *Note that we'll be recomputing all the table to keep this example simple. We could instead UPSERT the current hour with a stateful agregation*
+-- MAGIC *Note that we'll be recomputing all the table to keep this example simple. We could instead UPSERT the current hour with a stateful aggregation*
 
 -- COMMAND ----------
 

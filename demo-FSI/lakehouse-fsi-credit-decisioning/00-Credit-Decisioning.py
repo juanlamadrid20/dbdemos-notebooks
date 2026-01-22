@@ -34,7 +34,7 @@
 # MAGIC %md-sandbox
 # MAGIC ## DEMO: upsell your underbanked customers and reduce your risk through better credit scoring models
 # MAGIC
-# MAGIC In this demo, we'll step in the shoes of a retail bank trying to utilize the current interest rates hike and enhance it's bottom line performance (both increasing revenue and decreasing costs).
+# MAGIC In this demo, we'll step in the shoes of a retail bank trying to utilize the current interest rates hike and enhance its bottom line performance (both increasing revenue and decreasing costs).
 # MAGIC
 # MAGIC The business has determined that the bank's focus is at improving the credit evaluation of current and potential credit customers. We're asked to:
 # MAGIC
@@ -64,10 +64,10 @@
 # MAGIC   <div class="badge_b"><div class="badge">1</div> Ingest all the various sources of data and create our credit decisioning database (<strong>unification of data</strong>) </div>
 # MAGIC   <div class="badge_b"><div class="badge">2</div>  Secure data and grant read access to the Data Analyst and Data Science teams, including row- and column-level filtering, PII data masking, and others (<strong>data security and control</strong>)</div>
 # MAGIC   <div class="badge_b"><div class="badge">3</div> Use the Databricks unified <strong>data lineage</strong> to understand how your data flows and is used in your organisation</div>
-# MAGIC   <div class="badge_b"><div class="badge">4</div> Run BI  queries and EDA to analyze existing credit risk</div>
+# MAGIC   <div class="badge_b"><div class="badge">4</div> Run BI queries and EDA to analyze existing credit risk</div>
 # MAGIC   <div class="badge_b"><div class="badge">5</div>  Build ML model to <strong>predict credit worthiness</strong> of underbanked customers, evaluate the risk of current debt-holders, and deploy ML models for real-time serving in order to enable Buy Now, Pay Later use cases</div>
 # MAGIC   <div class="badge_b"><div class="badge">6</div> <strong>Visualise your business</strong> models along with all actionable insights coming from machine learning</div>
-# MAGIC   <div class="badge_b"><div class="badge">7</div>Provide an easy and simple way to securely share these insights to non-data users, such as bank tellers, call center agents, or credit agents (<strong>data democratization</strong>)</div>
+# MAGIC   <div class="badge_b"><div class="badge">7</div> Provide an easy and simple way to securely share these insights with non-data users, such as bank tellers, call center agents, or credit agents (<strong>data democratization</strong>)</div>
 # MAGIC </div>
 # MAGIC <br/><br/>
 # MAGIC <img width="1250px" src="https://raw.githubusercontent.com/databricks-demos/dbdemos-resources/main/images/fsi/credit_decisioning/fsi_credit_decisioning_flow.png" />
@@ -125,7 +125,7 @@
 # MAGIC Databricks AutoML will then accelerate our ML journey by creating state of the art Notebooks that we'll use to deploy our model in production within MLFlow Model registry.
 # MAGIC
 # MAGIC
-# MAGIC Once our is model ready, we'll leverage it to:
+# MAGIC Once our model is ready, we'll leverage it to:
 # MAGIC
 # MAGIC <div style="padding-left: 20px;">
 # MAGIC
@@ -177,7 +177,7 @@
 # MAGIC
 # MAGIC Using the model we built, we can score current and new customers to offer credit instruments (such as credit cards, loans, and mortgages). 
 # MAGIC
-# MAGIC We'll use our model outcome to only upsell customer filter our customers and build a dashboard including all this information:
+# MAGIC We'll use our model outcome to filter our customers and build a dashboard including all this information:
 # MAGIC 1. Evaluates the credit worthiness of individuals without financial history,
 # MAGIC 2. Estimates the ROI and revenue from upselling current customers who do not have credit instruments,
 # MAGIC 3. Provides explainability on an individual level, making it easier to create targeted offers to each customer.

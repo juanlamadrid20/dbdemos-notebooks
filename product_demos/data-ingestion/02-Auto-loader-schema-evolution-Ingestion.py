@@ -11,7 +11,7 @@
 # MAGIC
 # MAGIC Auto Loader can be used in a near real-time stream or in a batch fashion, e.g., running every night to ingest daily data.
 # MAGIC
-# MAGIC Auto Loader provides a strong gaurantee when used with a Delta sink (the data will only be ingested once).
+# MAGIC Auto Loader provides a strong guarantee when used with a Delta sink (the data will only be ingested once).
 # MAGIC
 # MAGIC ## How Auto Loader simplifies data ingestion
 # MAGIC
@@ -137,13 +137,13 @@ display(get_stream().filter("_rescued_data is not null"))
 # COMMAND ----------
 
 # MAGIC %md ### Adding a new column
-# MAGIC By default the stream will tigger a `UnknownFieldException` exception on new column. You then have to restart the stream to include the new column. 
+# MAGIC By default the stream will trigger an `UnknownFieldException` exception on new column. You then have to restart the stream to include the new column. 
 # MAGIC
 # MAGIC Make sure your previous stream is still running and run the next cell.
 # MAGIC
 # MAGIC *Notes*:
 # MAGIC * *See `cloudFiles.schemaEvolutionMode` for different behaviors and more details.*
-# MAGIC * *Don't forget to add `.writeStream.option("mergeSchema", "true")` to dynamically add when columns when writting to a delta table*
+# MAGIC * *Don't forget to add `.writeStream.option("mergeSchema", "true")` to dynamically add new columns when writing to a delta table*
 
 # COMMAND ----------
 

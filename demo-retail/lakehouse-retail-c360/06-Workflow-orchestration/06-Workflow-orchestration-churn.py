@@ -38,7 +38,7 @@
 # MAGIC
 # MAGIC <img style="float: right; margin-left: 10px" width="600px" src="https://github.com/databricks-demos/dbdemos-resources/blob/main/images/cross_demo_assets/dbdemos-workflow-churn-1.png?raw=true" />
 # MAGIC
-# MAGIC With Databricks Lakehouse, no need for external orchestrator. We can use [Workflows](/#job/list) (available on the left menu) to orchestrate our Churn pipeline within a few click.
+# MAGIC With Databricks Lakehouse, no need for external orchestrator. We can use [Workflows](/#job/list) (available on the left menu) to orchestrate our Churn pipeline within a few clicks.
 # MAGIC
 # MAGIC
 # MAGIC
@@ -100,6 +100,6 @@
 # MAGIC %md
 # MAGIC ## Conclusion
 # MAGIC
-# MAGIC Not only Datatabricks Lakehouse let you ingest, analyze and infer churn, it also provides a best-in-class orchestrator to offer your business fresh insight making sure everything works as expected!
+# MAGIC Not only does the Databricks Lakehouse let you ingest, analyze and infer churn, it also provides a best-in-class orchestrator to offer your business fresh insight making sure everything works as expected!
 # MAGIC
 # MAGIC [Go back to introduction]($../00-churn-introduction-lakehouse)

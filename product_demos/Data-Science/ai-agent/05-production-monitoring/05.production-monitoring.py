@@ -68,9 +68,9 @@ accuracy_guidelines = [
   """,
 ]
 
-steps_and_reasoning_guildelines = [
+steps_and_reasoning_guidelines = [
   """
-  Reponse must be done without showing reasoning.
+  Response must be done without showing reasoning.
     - don't mention that you need to look up things
     - do not mention tools or function used
     - do not tell your intermediate steps or reasoning
@@ -85,7 +85,7 @@ assessments = [
   # Guidelines can refer to the request and response.
   GuidelinesJudge(guidelines={
     'accuracy': accuracy_guidelines,
-    'steps_and_reasoning': steps_and_reasoning_guildelines
+    'steps_and_reasoning': steps_and_reasoning_guidelines
   })
 ]
 
@@ -121,7 +121,7 @@ def get_or_create_monitor():
 
 # COMMAND ----------
 
-# monitor will create a run that will be refreshed periodically (small cost incures). 
+# monitor will create a run that will be refreshed periodically (small cost incurs). 
 # uncomment to create the monitor in your experiment!
 # get_or_create_monitor()
 

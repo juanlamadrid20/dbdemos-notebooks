@@ -61,8 +61,8 @@ dbutils.fs.put('/Volumes/main__build/dbdemos_sdp_unit_test/raw_data/test/users_j
 
 # COMMAND ----------
 
-# In this example, we'll store our rules as a delta table for more flexibility & reusability. 
-# While this isn't directly related to Unit test, it can also help for programatical analysis/reporting.
+# In this example, we'll store our rules as a delta table for more flexibility & reusability.
+# While this isn't directly related to Unit test, it can also help for programmatic analysis/reporting.
 
 data = [
  # tag/table name      name              constraint

@@ -29,7 +29,7 @@
 -- MAGIC %md-sandbox
 -- MAGIC ## Wind Turbine Prescriptive Maintenance with the Databricks Intelligence Data Platform: Bringing Generative AI to Predictive Maintenance
 -- MAGIC
--- MAGIC Being able to collect and centralize industrial equipment information in real time is critical in the energy space. When a wind turbine is down, it is not generating power which leads to poor customer service and lost revenue. Data is the key to unlock critical capabilities such as energy optimization, anomaly detection, and/or predictive maintenance. The rapid rise of Generative AI provides the opportunity to revolutionize maintenance by not only predicting when equipment is likely to fail, but also generating prescriptive maintenance actions to prevent failurs before they arise and optimize equipment performance. This enables a shift from predictive to prescriptive maintenance. <br/> 
+-- MAGIC Being able to collect and centralize industrial equipment information in real time is critical in the energy space. When a wind turbine is down, it is not generating power which leads to poor customer service and lost revenue. Data is the key to unlock critical capabilities such as energy optimization, anomaly detection, and/or predictive maintenance. The rapid rise of Generative AI provides the opportunity to revolutionize maintenance by not only predicting when equipment is likely to fail, but also generating prescriptive maintenance actions to prevent failures before they arise and optimize equipment performance. This enables a shift from predictive to prescriptive maintenance. <br/> 
 -- MAGIC
 -- MAGIC <img src="https://raw.githubusercontent.com/databricks-demos/dbdemos-resources/refs/heads/main/images/manufacturing/lakehouse-iot-turbine/prescriptive_maintenance.png" width="700px" style="float:right; margin-left: 20px"/>
 -- MAGIC
@@ -180,7 +180,7 @@
 -- MAGIC
 -- MAGIC The rise of Generative AI enables a shift from Predictive to Prescriptive Maintenance ML Models. By going from ML models to agent systems, we can now leverage the predictive model as one of the many components of the AI system. This opens up a whole lot of new opportunities for automation and efficiency gains, which will further increase uptime and minimize costs.
 -- MAGIC
--- MAGIC Databricks offers a a set of tools to help developers build, deploy and evaluate production-quality AI agents like Retrievel Augmented Generation (RAG) applications, including a vector database, model serving endpoints, governance, monitoring and evaluation capabilties. 
+-- MAGIC Databricks offers a a set of tools to help developers build, deploy and evaluate production-quality AI agents like Retrievel Augmented Generation (RAG) applications, including a vector database, model serving endpoints, governance, monitoring, and evaluation capabilities. 
 -- MAGIC
 -- MAGIC _Disclaimer: if your organization doesn't allow (yet) the use of Databricks Vector Search and/or Model Serving, you can skip this section._
 
@@ -227,7 +227,7 @@
 -- COMMAND ----------
 
 -- MAGIC %md
--- MAGIC Open the [workflow and orchestration notebook]($./06-Workflow-orchestration/06-Workflow-orchestration-iot-turbine) to schedule our pipeline (data ingetion, model re-training etc)
+-- MAGIC Open the [workflow and orchestration notebook]($./06-Workflow-orchestration/06-Workflow-orchestration-iot-turbine) to schedule our pipeline (data ingestion, model re-training etc)
 
 -- COMMAND ----------
 

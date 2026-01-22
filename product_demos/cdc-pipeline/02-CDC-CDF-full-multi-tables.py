@@ -4,15 +4,15 @@
 # MAGIC # Full demo: Change Data Capture on multiple tables
 # MAGIC ## Use-case: Synchronize all your ELT tables with your Lakehouse
 # MAGIC
-# MAGIC We previously saw how to synchronize a single table. However, real use-case typically includes multiple tables that we need to ingest and synch.
+# MAGIC We previously saw how to synchronize a single table. However, real use-cases typically include multiple tables that we need to ingest and sync.
 # MAGIC
 # MAGIC These tables are stored on different folder having the following layout:
 # MAGIC
 # MAGIC <img width="1000px" src="https://github.com/databricks-demos/dbdemos-resources/raw/main/images/product/Delta-Lake-CDC-CDF/cdc-full.png">
 # MAGIC
 # MAGIC **A note on Spark Declarative Pipelines**:<br/>
-# MAGIC *Spark Declarative Pipelines has been designed to simplify this process and handle concurrent execution properly, without having you to start multiple stream in parallel.*<br/>
-# MAGIC *We strongly advise to have a look at the SDP CDC demo to simplify such pipeline implementation: `dbdemos.instal('dlt-cdc')`*
+# MAGIC *Spark Declarative Pipelines has been designed to simplify this process and handle concurrent execution properly, without having you to start multiple streams in parallel.*<br/>
+# MAGIC *We strongly advise to have a look at the SDP CDC demo to simplify such pipeline implementation: `dbdemos.install('dlt-cdc')`*
 # MAGIC
 # MAGIC In this notebook, we'll see how this can be done using Python & standard streaming APIs (without SDP).
 # MAGIC
@@ -28,7 +28,7 @@
 # MAGIC %md
 # MAGIC ## Running the streams in parallel
 # MAGIC
-# MAGIC Each table will be save as a distinct table, using a distinct Spark Structured Streaming strem.
+# MAGIC Each table will be saved as a distinct table, using a distinct Spark Structured Streaming stream.
 # MAGIC
 # MAGIC To implement an efficient pipeline, we should process multiple streams at the same time. To do that, we'll use a ThreadPoolExecutor and start multiple thread, each of them processing and waiting for a stream.
 # MAGIC

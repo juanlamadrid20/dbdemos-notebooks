@@ -35,7 +35,7 @@ print(f"Training data has been installed in the volume {volume_folder}")
 # MAGIC %md 
 # MAGIC ## Reviewing the incoming dataset
 # MAGIC
-# MAGIC The dataset was downloaded for you automatically and is available in cloud your dbfs storage folder. Let's explore the data:
+# MAGIC The dataset was downloaded for you automatically and is available in your cloud storage folder. Let's explore the data:
 
 # COMMAND ----------
 

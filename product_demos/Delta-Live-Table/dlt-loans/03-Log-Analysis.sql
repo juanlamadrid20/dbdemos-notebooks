@@ -9,7 +9,7 @@
 -- MAGIC
 -- MAGIC You can leverage the expecations directly as a SQL table with Databricks SQL to track your expectation metrics and send alerts as required. 
 -- MAGIC
--- MAGIC This notebook extracts and analyses expectation metrics to build such KPIS.
+-- MAGIC This notebook extracts and analyzes expectation metrics to build such KPIs.
 -- MAGIC
 -- MAGIC ## Your event log table is now available as a Table within your schema!
 -- MAGIC

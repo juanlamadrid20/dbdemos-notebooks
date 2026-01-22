@@ -39,7 +39,7 @@
 # MAGIC
 # MAGIC <img src="https://github.com/databricks-demos/dbdemos-resources/blob/main/images/product/ai-agent/mlflow-evaluate-0.png?raw=true?raw=true" width="500px" style="float: right">
 # MAGIC
-# MAGIC Now that our tools are ready, we'll create an Agent using Langchain and give equip the agent with the tools we previously created!
+# MAGIC Now that our tools are ready, we'll create an Agent using Langchain and equip the agent with the tools we previously created!
 # MAGIC
 # MAGIC Once our agent created, we'll start running a first Evaluation round against an existing evaluation dataset, and improve our prompt to make it better and have better eval metrics!
 
@@ -86,9 +86,9 @@
 # MAGIC %md
 # MAGIC ## 6/ Track how your agent improves your business metrics
 # MAGIC
-# MAGIC Out last step is to measure how your agent impact your business!
+# MAGIC Our last step is to measure how your agent impacts your business!
 # MAGIC
-# MAGIC Thanksfully, Databricks let you manage your entire data stack, you can for example synchronize your CRM or Ticket support data and track how the CSAT score increases over time, benchmarking a team with and without agent for example!
+# MAGIC Thankfully, Databricks lets you manage your entire data stack, you can for example synchronize your CRM or Ticket support data and track how the CSAT score increases over time, benchmarking a team with and without agent for example!
 # MAGIC
 # MAGIC Open [06-improving-business-kpis/06-improving-business-kpis]($./06-improving-business-kpis/06-improving-business-kpis) to track your Busines KPI with a ready to use dashboard!
 
@@ -100,7 +100,7 @@
 # MAGIC
 # MAGIC ## What's next: Discover ready to use Agent with Databricks Agent Bricks
 # MAGIC
-# MAGIC Many AI tasks are common, and Databricks provides out of the box Agent that you can use and stich together:
+# MAGIC Many AI tasks are common, and Databricks provides out of the box Agents that you can use and stitch together:
 # MAGIC
 # MAGIC - **Information Extraction**: Extract key information, classify content, or summarize text from documents into a structured JSON.
 # MAGIC - **Custom LLM**: Specialize an LLM endpoint to perform custom text tasks (i.e. content generation, chat) aligned within your domain-specific guidelines.

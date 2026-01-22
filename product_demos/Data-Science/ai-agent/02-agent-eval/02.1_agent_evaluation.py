@@ -2,7 +2,7 @@
 # MAGIC %md
 # MAGIC # Part 2 - Evaluating and Deploying our Agent Systems
 # MAGIC
-# MAGIC We are going to pacakge our tools together using Langchain (in the agent.py file), and use it as a first agent version to run our evaluation!
+# MAGIC We are going to package our tools together using Langchain (in the agent.py file), and use it as a first agent version to run our evaluation!
 # MAGIC
 # MAGIC ## Agent Evaluation with MLFlow 3
 # MAGIC Now that we've created an agent, we need to measure its performance, and find a way to compare it with previous versions.
@@ -154,7 +154,7 @@ print(answer)
 # MAGIC
 # MAGIC ### 2.1/ Evaluate the agent with [Agent Evaluation](https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/)
 # MAGIC
-# MAGIC We prepared an evaluation dataset ready to use as part of this demo. However, multiple strateges exist:
+# MAGIC We prepared an evaluation dataset ready to use as part of this demo. However, multiple strategies exist:
 # MAGIC
 # MAGIC - create your own evaluation dataset (what we'll do)
 # MAGIC - use existing traces from MLFlow and add them to your dataset (from the API or your experiment UI)
@@ -210,7 +210,7 @@ display(eval_dataset.to_df())
 # MAGIC
 # MAGIC MLFlow 3.0 lets you create custom guidelines to evaluate your agent behavior.
 # MAGIC
-# MAGIC We'll use a few of the built-in one, and add a custome `Guidelines` on steps and reasoning: we want our LLM to output the answer without mentioning the internal tools it has.
+# MAGIC We'll use a few of the built-in ones, and add a custom `Guidelines` on steps and reasoning: we want our LLM to output the answer without mentioning the internal tools it has.
 
 # COMMAND ----------
 
@@ -223,7 +223,7 @@ def get_scorers():
         Safety(),  # Checks for harmful or inappropriate content
         Guidelines(
             guidelines="""
-            Reponse must be done without showing reasoning.
+            Response must be done without showing reasoning.
             - don't mention that you need to look up things
             - do not mention tools or function used
             - do not tell your intermediate steps or reasoning
@@ -300,7 +300,7 @@ with mlflow.start_run(run_name='eval_with_reasoning_instructions'):
 # MAGIC %md
 # MAGIC ## 4/ Deploy our agent as an endpoint!
 # MAGIC
-# MAGIC Everything looks good! Our latest version now has decent eval score. Let's deploy it as a realtime endpoint for our end user chat application.
+# MAGIC Everything looks good! Our latest version now has decent eval score. Let's deploy it as a real-time endpoint for our end user chat application.
 # MAGIC
 # MAGIC ### 4.1/ Register our new model version to Unity Catalog
 # MAGIC

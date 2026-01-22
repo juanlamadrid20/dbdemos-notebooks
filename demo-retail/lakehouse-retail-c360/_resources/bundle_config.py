@@ -220,7 +220,7 @@
       "pre_run": True, 
       "publish_on_website": True, 
       "add_cluster_setup_cell": True,
-      "title":  "Infer churn on batch or realtime serverless", 
+      "title":  "Infer churn on batch or real-time serverless", 
       "description": "Once your model is deployed, run low latency inferences."
     },
     {

@@ -30,13 +30,13 @@
 -- MAGIC %md-sandbox
 -- MAGIC ## Reducing Fraud  with the lakehouse
 -- MAGIC
--- MAGIC Being able to collect and centralize information in real time is critical for the industry. Data is the key to unlock critical capabilities such as realtime personalization or fraud prevention. <br/> 
+-- MAGIC Being able to collect and centralize information in real time is critical for the industry. Data is the key to unlock critical capabilities such as real-time personalization or fraud prevention. <br/> 
 -- MAGIC
 -- MAGIC ### What we'll build
 -- MAGIC
 -- MAGIC In this demo, we'll build an end-to-end Banking platform, collecting data from multiple sources in real time. 
 -- MAGIC
--- MAGIC With this information, we'll not only be able to analyse existing past fraud and understand common patterns, but we'll also be able to rate financial transaction risk in realtime.
+-- MAGIC With this information, we'll not only be able to analyze existing past fraud and understand common patterns, but we'll also be able to rate financial transaction risk in real-time.
 -- MAGIC
 -- MAGIC Based on this information, we'll be able to proactively reduce Fraud. A typical example could be asking for an extra security challenge or having human intervention when our model scores high.
 -- MAGIC
@@ -46,7 +46,7 @@
 -- MAGIC
 -- MAGIC 1. Ingest and create our Banking database, with tables easy to query in SQL
 -- MAGIC 2. Secure data and grant read access to the Data Analyst and Data Science teams.
--- MAGIC 3. Run BI queries to analyse existing Fraud
+-- MAGIC 3. Run BI queries to analyze existing Fraud
 -- MAGIC 4. Build ML models & deploy them to provide real-time fraud detection capabilities.
 -- MAGIC
 -- MAGIC ### Our dataset
@@ -60,7 +60,7 @@
 -- MAGIC
 -- MAGIC *Note that at a technical level, our data could come from any source. Databricks can ingest data from any system (Salesforce, Fivetran, message queues like kafka, blob storage, SQL & NoSQL databases...).*
 -- MAGIC
--- MAGIC Let's see how this data can be used within the Lakehouse to analyse our customer transactions & detect potential fraud in realtime.
+-- MAGIC Let's see how this data can be used within the Lakehouse to analyze our customer transactions & detect potential fraud in real-time.
 
 -- COMMAND ----------
 
@@ -160,7 +160,7 @@
 -- MAGIC ### ML: Fraud Detection Model Training
 -- MAGIC Let's see how Databricks accelerates ML projects with AutoML: one-click model training with the [04.1-AutoML-FSI-fraud]($./04-Data-Science-ML/04.1-AutoML-FSI-fraud)
 -- MAGIC
--- MAGIC ### ML: Realtime Model Serving
+-- MAGIC ### ML: Real-time Model Serving
 -- MAGIC
 -- MAGIC Once our model is trained and available, Databricks Model Serving can be used to enable real time inferences, allowing fraud detection in real-time.
 -- MAGIC
