@@ -28,7 +28,7 @@
 -- COMMAND ----------
 
 -- MAGIC %md-sandbox
--- MAGIC ## Reducing Fraud  with the lakehouse
+-- MAGIC ## Reducing Fraud with the Lakehouse
 -- MAGIC
 -- MAGIC Being able to collect and centralize information in real time is critical for the industry. Data is the key to unlock critical capabilities such as real-time personalization or fraud prevention. <br/> 
 -- MAGIC
@@ -72,7 +72,7 @@
 -- MAGIC
 -- MAGIC <br/>
 -- MAGIC <div style="padding-left: 420px">
--- MAGIC Our first step is to ingest and clean the raw data we received so that our Data Analyst team can start running analysis on top of it.
+-- MAGIC Our first step is to ingest and clean the raw data we received so that our data analyst team can start running analysis on top of it.
 -- MAGIC
 -- MAGIC
 -- MAGIC <img src="https://pages.databricks.com/rs/094-YMS-629/images/delta-lake-logo.png" style="float: right; margin-top: 20px" width="200px">

@@ -4,7 +4,7 @@
 -- MAGIC
 -- MAGIC Data governance and security is hard when it comes to a complete Data Platform. SQL GRANT on tables isn't enough and security must be enforced for multiple data assets (dashboards, Models, files etc).
 -- MAGIC
--- MAGIC To reduce risks and driving innovation, Emily's team needs to:
+-- MAGIC To reduce risks and drive innovation, Emily's team needs to:
 -- MAGIC
 -- MAGIC - Unify all data assets (Tables, Files, ML models, Features, Dashboards, Queries)
 -- MAGIC - Onboard data with multiple teams
@@ -18,12 +18,12 @@
 -- MAGIC
 -- MAGIC Let's see how the Lakehouse can solve this challenge leveraging Unity Catalog.
 -- MAGIC
--- MAGIC Our Data has been saved as Delta Table by our Data Engineering team.  The next step is to secure this data while allowing cross team to access it. <br>
+-- MAGIC Our data has been saved as Delta Table by our Data Engineering team. The next step is to secure this data while allowing cross-team to access it. <br>
 -- MAGIC A typical setup would be the following:
 -- MAGIC
--- MAGIC * Data Engineers / Jobs can read and update the main data/schemas (ETL part)
--- MAGIC * Data Scientists can read the final tables and update their features tables
--- MAGIC * Data Analyst have READ access to the Data Engineering and Feature Tables and can ingest/transform additional data in a separate schema.
+-- MAGIC * Data engineers / Jobs can read and update the main data/schemas (ETL part)
+-- MAGIC * Data scientists can read the final tables and update their features tables
+-- MAGIC * Data analysts have READ access to the Data Engineering and Feature Tables and can ingest/transform additional data in a separate schema.
 -- MAGIC * Data is masked/anonymized dynamically based on each user access level
 -- MAGIC
 -- MAGIC This is made possible by Unity Catalog. When tables are saved in the Unity Catalog, they can be made accessible to the entire organization, cross-workspaces and cross users.
