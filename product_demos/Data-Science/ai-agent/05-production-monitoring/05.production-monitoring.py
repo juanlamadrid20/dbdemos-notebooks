@@ -19,7 +19,7 @@
 # MAGIC <img src="https://i.imgur.com/wv4p562.gif">
 # MAGIC
 # MAGIC <!-- Collect usage data (view). Remove it to disable collection or disable tracker during installation. View README for more details.  -->
-# MAGIC <img width="1px" src="https://ppxrzfxige.execute-api.us-west-2.amazonaws.com/v1/analytics?category=data-science&org_id=1444828305810485&notebook=%2F05-production-monitoring%2F05.production-monitoring&demo_name=ai-agent&event=VIEW&path=%2F_dbdemos%2Fdata-science%2Fai-agent%2F05-production-monitoring%2F05.production-monitoring&version=1&user_hash=e0e2ee33e235fc2614124e893f8db907189efe896e2a7f02a1934da9e2ba72ab">
+# MAGIC <img width="1px" src="https://ppxrzfxige.execute-api.us-west-2.amazonaws.com/v1/analytics?category=data-science&org_id=1444828305810485&notebook=05-production-monitoring/05.production-monitoring&demo_name=ai-agent&event=VIEW&path=/_dbdemos/data-science/ai-agent/05-production-monitoring/05.production-monitoring&version=1&user_hash=e0e2ee33e235fc2614124e893f8db907189efe896e2a7f02a1934da9e2ba72ab">
 
 # COMMAND ----------
 
