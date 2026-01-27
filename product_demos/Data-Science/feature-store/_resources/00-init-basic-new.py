@@ -11,6 +11,7 @@ reset_all_data = dbutils.widgets.get("reset_all_data") == "true"
 
 # COMMAND ----------
 
+# TODO: please remove summer_catalog
 catalog = "main__build"
 main_naming = "dbdemos_fs_travel"
 schema = dbName = db = "dbdemos_fs_travel"
@@ -425,3 +426,49 @@ def init_experiment_for_batch(demo_name, experiment_name):
   mlflow.set_experiment(xp)
   
 init_experiment_for_batch("feature_store", "introduction")
+
+# COMMAND ----------
+
+import re
+
+def drop_00x_tables(dry_run: bool = True):
+    """
+    List all tables in `database` (or current DB) and drop those
+    whose name ends with 00X (e.g. 001, 002, 003...).
+
+    Params
+    ------
+    database : str | None
+        Name of the database/schema. If None, uses the current database.
+    dry_run : bool
+        If True, only prints what would be dropped (no actual DROP).
+        If False, actually executes DROP TABLE IF EXISTS.
+    """
+    pattern = re.compile(r"00\d$")  # matches table names ending with 00X
+
+    to_drop = []
+    for tbl in spark.catalog.listTables(f"{catalog}.{schema}"):
+        if tbl.tableType == "TABLE" and pattern.search(tbl.name):
+            to_drop.append(tbl.name)
+
+    if not to_drop:
+        print("No matching tables found.")
+        return
+
+    print("Tables matching pattern '*00X':")
+    for name in to_drop:
+        print(f"  - {db}.{name}")
+
+    if dry_run:
+        print("\nDry run: no tables were dropped. Set dry_run=False to actually drop them.")
+        return
+
+    # Actually drop the tables
+    for name in to_drop:
+        fq_name = f"`{db}`.`{name}`"
+        print(f"Dropping {fq_name} ...")
+        spark.sql(f"DROP TABLE IF EXISTS {fq_name}")
+
+    print("Done.")
+
+drop_00x_tables(dry_run=False)
