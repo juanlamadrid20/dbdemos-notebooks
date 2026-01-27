@@ -6,7 +6,7 @@
 -- MAGIC
 -- MAGIC The main feature of Unity Catalog is to provide you an easy way to setup Table ACL (Access Control Level), but also build Dynamic Views based on each individual permission.
 -- MAGIC
--- MAGIC Typically, Analysts will only have access to customers from their country and won't be able to read GDPR/Sensitive informations (like email, firstname etc.)
+-- MAGIC Typically, Analysts will only have access to customers from their country and won't be able to read GDPR/Sensitive information (like email, firstname etc.)
 -- MAGIC
 -- MAGIC A typical workflow in the Lakehouse architecture is the following:
 -- MAGIC
@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS customers (
 -- MAGIC %md 
 -- MAGIC ## Our customer data was filled for us!
 -- MAGIC
--- MAGIC The initialization cell already filled the table for us with fake data for the demo, let's review it's content.
+-- MAGIC The initialization cell already filled the table for us with fake data for the demo, let's review its content.
 
 -- COMMAND ----------
 

@@ -8,12 +8,12 @@
 # MAGIC All our assets are ready. We now need to define when we want our overall workflow/pipeline to kick in and refresh the tables.
 # MAGIC
 # MAGIC Our Data Pipeline can be run in 2 mode:
-# MAGIC - continuous mode to have a streaming pipeline, providing near-realtime insight (ingesting new claims in real-time).
+# MAGIC - continuous mode to have a streaming pipeline, providing near-real-time insight (ingesting new claims in real-time).
 # MAGIC - In a batch mode, waking the pipeline every X hours, ingest the new data (incremental) and shut down all your compute. This is a simple configuration offering a tradeoff between uptime and ingestion latencies.
 # MAGIC
-# MAGIC In our case, we decided that the best tradoff is to ingest new data every hours.
+# MAGIC In our case, we decided that the best trade-off is to ingest new data every hour.
 # MAGIC
-# MAGIC To do so, we'll need an orchestrator to schedule the data ingestion (trigger the SDP pipeline) every hour, and then call our model to infere the image severity. 
+# MAGIC To do so, we'll need an orchestrator to schedule the data ingestion (trigger the SDP pipeline) every hour, and then call our model to infer the image severity. 
 # MAGIC
 # MAGIC Ultimately, we could even refresh our DBSQL Dashboard!
 # MAGIC

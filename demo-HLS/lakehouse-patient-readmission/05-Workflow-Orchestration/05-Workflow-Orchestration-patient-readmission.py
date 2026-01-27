@@ -6,7 +6,7 @@
 # MAGIC
 # MAGIC All our assets are ready. We now need to define when we want our SDP pipeline to kick in and refresh the tables.
 # MAGIC
-# MAGIC One option is to switch SDP pipeline in continuous mode to have a streaming pipeline, providing near-realtime insight.
+# MAGIC One option is to switch SDP pipeline in continuous mode to have a streaming pipeline, providing near-real-time insight.
 # MAGIC
 # MAGIC An alternative is to wakeup the SDP pipeline every X hours, ingest the new data (incremental) and shut down all your compute. 
 # MAGIC
@@ -16,7 +16,7 @@
 # MAGIC
 # MAGIC - Start the SDP pipeline to ingest new data and refresh our tables
 # MAGIC - Refresh the DBSQL dashboard (and potentially notify downstream applications)
-# MAGIC - Retrain our model to include the lastest date and capture potential behavior change
+# MAGIC - Retrain our model to include the latest data and capture potential behavior change
 # MAGIC
 # MAGIC <!-- Collect usage data (view). Remove it to disable collection. View README for more details.  -->
 # MAGIC <img width="1px" src="https://ppxrzfxige.execute-api.us-west-2.amazonaws.com/v1/analytics?category=lakehouse&notebook=05-Workflow-Orchestration-patient-readmission&demo_name=lakehouse-patient-readmission&event=VIEW">

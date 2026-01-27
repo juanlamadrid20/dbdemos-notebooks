@@ -20,7 +20,7 @@
 # MAGIC
 # MAGIC - **Unified Governance**: Every ingested dataset is automatically governed by Unity Catalog, providing unified visibility, access control, lineage, and discovery across your entire data and AI assets.
 # MAGIC
-# MAGIC - **Simplified Data Engineering**: Build and manage data ingestion pipelines with ease using declarative frameworks like Spark Declarative Pipelines (formely known as SDP), reducing complexity and accelerating time to value.
+# MAGIC - **Simplified Data Engineering**: Build and manage data ingestion pipelines with ease using declarative frameworks like Spark Declarative Pipelines (formerly known as DLT), reducing complexity and accelerating time to value.
 # MAGIC
 # MAGIC Break down data silos, accelerate your data and AI initiatives, and unlock the full potential of your data with the Databricks Data Intelligence Platform.
 

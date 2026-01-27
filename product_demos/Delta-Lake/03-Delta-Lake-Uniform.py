@@ -6,7 +6,7 @@
 # MAGIC
 # MAGIC <img src="https://cms.databricks.com/sites/default/files/inline-images/image1_5.png" width="700px" style="float: right; margin-left: 50px"/>
 # MAGIC
-# MAGIC Companies want to leverage open format and stay away from vendor lockin. Migration is costly and difficult, so they want to make the right decision up front and only have to save data once. 
+# MAGIC Companies want to leverage open format and stay away from vendor lock-in. Migration is costly and difficult, so they want to make the right decision up front and only have to save data once. 
 # MAGIC
 # MAGIC They ultimately want the best performance at the cheapest price for all of their data workloads including ETL, BI, and AI, and the flexibility to consume that data anywhere.
 # MAGIC
@@ -169,9 +169,9 @@ table_info['delta_uniform_iceberg']
 # COMMAND ----------
 
 # MAGIC %md 
-# MAGIC That's it! You can now access all your Delta Lake table as Iceberg table, while getting the power of Delta Lake and bazing fast queries with Liquid Clustering.
+# MAGIC That's it! You can now access all your Delta Lake table as Iceberg table, while getting the power of Delta Lake and blazing fast queries with Liquid Clustering.
 # MAGIC
-# MAGIC Your lakehouse is now fully open, without any vender lock-in. 
+# MAGIC Your lakehouse is now fully open, without any vendor lock-in. 
 # MAGIC
 # MAGIC
 # MAGIC Next: Deep dive into Delta Lake Change Data Capture capability with [the 04-Delta-Lake-CDF notebook]($./04-Delta-Lake-CDF) or go back to [00-Delta-Lake-Introduction]($./00-Delta-Lake-Introduction).

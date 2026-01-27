@@ -63,7 +63,7 @@ logging.getLogger('mlflow').setLevel(logging.ERROR)
 #dbdemos__delete_this_cell
 #force the experiment to the field demos one. Required to launch as a batch
 def init_experiment_for_batch(demo_name, experiment_name):
-  #You can programatically get a PAT token with the following
+  #You can programmatically get a PAT token with the following
   from databricks.sdk import WorkspaceClient
   w = WorkspaceClient()
   xp_root_path = f"/Shared/dbdemos/experiments/{demo_name}"

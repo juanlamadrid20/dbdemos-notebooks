@@ -179,7 +179,7 @@ w.apps.get(name=app_name).url
 # MAGIC
 # MAGIC We saw how Databricks provides an end to end platform: 
 # MAGIC - Building and deploying an endpoint
-# MAGIC - Buit-in solution to review, analyze and improve our chatbot
+# MAGIC - Built-in solution to review, analyze and improve our chatbot
 # MAGIC - Deploy front-end genAI application with lakehouse apps!
 
 # COMMAND ----------

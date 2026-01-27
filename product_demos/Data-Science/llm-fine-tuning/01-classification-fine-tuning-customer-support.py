@@ -133,7 +133,7 @@ spark.sql(f"""SELECT
 
 # MAGIC %md-sandbox
 # MAGIC
-# MAGIC As you can see, this isn't ideal. It's adding lot of text, and isn't classifying properly our dataset (resultat might vary depending on the size of the model used).
+# MAGIC As you can see, this isn't ideal. It's adding a lot of text, and isn't classifying properly our dataset (results may vary depending on the size of the model used).
 # MAGIC
 # MAGIC ## Preparing the Dataset for Chat Completion for Fine Tuning
 # MAGIC
@@ -186,7 +186,7 @@ spark.table('ticket_priority_training_dataset').display()
 # MAGIC
 # MAGIC Once the training is done, your model will automatically be saved within Unity Catalog and available for you to serve!
 # MAGIC
-# MAGIC In this demo, we'll be using the API on the table we just created to programatically fine tune our LLM.
+# MAGIC In this demo, we'll be using the API on the table we just created to programmatically fine tune our LLM.
 # MAGIC
 # MAGIC However, you can also create a new Fine Tuning experiment from the UI!
 
@@ -212,7 +212,7 @@ run = fm.create(
     model=base_model_name,  
     train_data_path=f'{catalog}.{db}.ticket_priority_training_dataset',
     task_type="CHAT_COMPLETION",  
-    training_duration="10ep",  #opnly 10 epochs for the demo
+    training_duration="10ep",  #only 10 epochs for the demo
     register_to=registered_model_name,
     learning_rate="5e-7",
 )
@@ -293,7 +293,7 @@ except:
 # MAGIC
 # MAGIC That's it! We're now ready to serve our Fine Tuned model and start asking questions!
 # MAGIC
-# MAGIC The reponses will now be improved and specialized from the Databricks documentation and our RAG chatbot formatted output!
+# MAGIC The responses will now be improved and specialized from the Databricks documentation and our RAG chatbot formatted output!
 
 # COMMAND ----------
 

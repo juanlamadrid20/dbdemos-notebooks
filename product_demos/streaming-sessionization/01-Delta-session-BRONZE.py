@@ -47,7 +47,7 @@
 # MAGIC Let's build our Session job to detect cart abandonment !
 # MAGIC
 # MAGIC
-# MAGIC *Note: again, this is an advanced demo - if you're starting with Databricks and are looking for a simple streaming pipeline we recommand going with SDP instead.*
+# MAGIC *Note: again, this is an advanced demo - if you're starting with Databricks and are looking for a simple streaming pipeline we recommend going with SDP instead.*
 # MAGIC
 # MAGIC
 # MAGIC <!-- Collect usage data (view). Remove it to disable collection or disable tracker during installation. View README for more details.  -->
@@ -77,10 +77,10 @@
 # MAGIC
 # MAGIC #### Solving small files and compaction issues
 # MAGIC
-# MAGIC Everytime we capture kafka events, they'll be stored in our table and this will create new files. After several days, we'll endup with millions of small files leading to performance issues.<br/>
+# MAGIC Everytime we capture kafka events, they'll be stored in our table and this will create new files. After several days, we'll end up with millions of small files leading to performance issues.<br/>
 # MAGIC Databricks solves that with autoOptimize & autoCompact, 2 properties to set at the table level.
 # MAGIC
-# MAGIC *Note that if the table isn't created with all the columns. The engine will automatically add the new column from kafka at write time, merging the schema gracefuly*
+# MAGIC *Note that if the table isn't created with all the columns. The engine will automatically add the new column from kafka at write time, merging the schema gracefully*
 
 # COMMAND ----------
 
@@ -176,6 +176,6 @@ DBDemos.stop_all_streams(sleep_time=120)
 # MAGIC
 # MAGIC While we can explore the dataset using spark json manipulation, this isn't ideal. For example is the json in our message changes after a few month, our request will fail.
 # MAGIC
-# MAGIC Futhermore, performances won't be great at scale: because all our data is stored as a unique, we can't leverage data skipping and a columnar format
+# MAGIC Furthermore, performances won't be great at scale: because all our data is stored as a unique, we can't leverage data skipping and a columnar format
 # MAGIC
 # MAGIC That's why we need another table:  **[A Silver Table!]($./02-Delta-session-SILVER)**

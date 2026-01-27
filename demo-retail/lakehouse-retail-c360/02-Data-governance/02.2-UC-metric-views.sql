@@ -124,19 +124,19 @@ select CURRENT_CATALOG() as catalog, CURRENT_SCHEMA() as schema
 
 
 -- Create a Metric View with business-friendly dimensions and measures
-CREATE VIEW IF NOT EXISTS churn_users_metric_view
+CREATE OR REPLACE VIEW churn_users_metric_view
 WITH METRICS
 LANGUAGE YAML
 COMMENT 'Metric view demonstration'
 AS $$
 version: 0.1
-source: main.dbdemos_retail_c360.churn_users
+source: main__build.dbdemos_retail_c360.churn_users
 
 filter: last_activity_date >= '2020-01-01'
 
 joins:
   - name: churn_orders
-    source: main.dbdemos_retail_c360.churn_orders
+    source: main__build.dbdemos_retail_c360.churn_orders
     using: ["user_id"]
 
 dimensions:

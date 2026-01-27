@@ -84,7 +84,7 @@
 # MAGIC This notebook creates the three Mosaic AI tools and associated Mosaic AI endpoints, which will be composed together into a agent in notebook [05.2-agent-creation-guide]($./05.2-agent-creation-guide).
 # MAGIC 1. **Turbine predictor** which uses a Model Serving endpoint to predict turbines at risk of failure.
 # MAGIC 2. **Turbine specifications retriever** which retrieve the turbine specifications based on its id.
-# MAGIC 3. **Turbine maintenance guide**  which uses a Vector Search endpoint to retrieve maintenance guide based on the turbines and issues being adressed.
+# MAGIC 3. **Turbine maintenance guide**  which uses a Vector Search endpoint to retrieve maintenance guide based on the turbines and issues being addressed.
 
 # COMMAND ----------
 
@@ -104,7 +104,7 @@
 # MAGIC
 # MAGIC <img src="https://raw.githubusercontent.com/databricks-demos/dbdemos-resources/refs/heads/main/images/manufacturing/lakehouse-iot-turbine/iot_agent_graph_v2_1.png" style="float: right; width: 600px; margin-left: 10px">
 # MAGIC
-# MAGIC To enable our Agent System to predict turbine failtures based on industrial IoT sensor readings, we will rely on the model we deployed previously in the  [./04.3-running-inference-iot-turbine]($./04.3-running-inference-iot-turbine) notebook. 
+# MAGIC To enable our Agent System to predict turbine failures based on industrial IoT sensor readings, we will rely on the model we deployed previously in the  [./04.3-running-inference-iot-turbine]($./04.3-running-inference-iot-turbine) notebook. 
 # MAGIC
 # MAGIC **Make sure you run this ML notebook to create the model serving endpoint!**
 # MAGIC
@@ -181,7 +181,7 @@
 # MAGIC
 # MAGIC In this case, we'll simply do a SQL call to our ML model.
 # MAGIC
-# MAGIC *Note: in a more production-grade setup, we would instead use Databricks managed postgres to fetch our features with millisecond response time to speedup our system, but this is out side of the scope of this demo!* 
+# MAGIC *Note: in a more production-grade setup, we would instead use Databricks managed postgres to fetch our features with millisecond response time to speedup our system, but this is outside the scope of this demo!* 
 
 # COMMAND ----------
 
@@ -190,7 +190,7 @@
 # MAGIC
 # MAGIC Lakebase is a new feature provided by Databricks adding support for transactional (OLTP) databases to perform as in our case transactional reads. Without any manual effort or delta table is synced to a managed postgress database for transactional operations. You can discover more here: https://learn.microsoft.com/en-us/azure/databricks/oltp/
 # MAGIC
-# MAGIC Let's create first a so called snyced table running on the OLTP database before creating our retriever.
+# MAGIC Let's first create a so-called synced table running on the OLTP database before creating our retriever.
 # MAGIC
 # MAGIC Hereby we are using the Python SDK. You can also perform those steps using the UI following the Docu above or the Demo here: https://www.databricks.com/resources/demos/tours/appdev/databricks-lakebase?itm_data=demo_center
 
@@ -285,7 +285,7 @@ print(f"Status message: {status.data_synchronization_status.message}")
 # MAGIC <img src="https://raw.githubusercontent.com/databricks-demos/dbdemos-resources/refs/heads/main/images/manufacturing/lakehouse-iot-turbine/iot_agent_graph_v2_3.png" style="float: right; width: 600px; margin-left: 10px">
 # MAGIC
 # MAGIC
-# MAGIC We were provided with PDF guide containing all the error code and maintenance steps for the critical components of our wind turbine. The're saved as pdf file in our volume.
+# MAGIC We were provided with PDF guide containing all the error code and maintenance steps for the critical components of our wind turbine. They're saved as PDF files in our volume.
 # MAGIC
 # MAGIC Let's parse them and index them so that we can properly retrieve them. We'll save them in a Vector Search endpoint and leverage it to guide the operators with the maintenance step and recommendations.
 # MAGIC
@@ -391,7 +391,7 @@ print(f"Endpoint named {VECTOR_SEARCH_ENDPOINT_NAME} is ready.")
 # MAGIC
 # MAGIC You can view your endpoint on the [Vector Search Endpoints UI](#/setting/clusters/vector-search). Click on the endpoint name to see all indexes that are served by the endpoint.
 # MAGIC
-# MAGIC All we now have to do is to as Databricks to create the index on top of our table. The Delta Table will automatically be synched with the index.
+# MAGIC All we now have to do is to as Databricks to create the index on top of our table. The Delta Table will automatically be synced with the index.
 # MAGIC
 # MAGIC
 # MAGIC Again, you can do that using your Unity Catalog UI, and selecting the turbine_maintenance_guide table in your Unity Catalog, and click on add a vector search. 
@@ -425,7 +425,7 @@ else:
 # MAGIC ### 3.4 Create our tool
 # MAGIC Below, we utilize the _VECTOR\_SEARCH_ SQL function from Databricks to easily set up our maintenance reports retriever function. Our agent will utilize this function in the subsequent steps!
 # MAGIC
-# MAGIC **In our Agent we will not leverage the function instead we can directly integrate the vector index into the agent as the SQL function for authentification is not currently supported within the agent.**
+# MAGIC **In our Agent we will not leverage the function instead we can directly integrate the vector index into the agent as the SQL function for authentication is not currently supported within the agent.**
 
 # COMMAND ----------
 
@@ -434,7 +434,7 @@ spark.sql(f"""
 CREATE OR REPLACE FUNCTION turbine_maintenance_guide_retriever(question STRING)
 RETURNS ARRAY<STRING>
 LANGUAGE SQL
-COMMENT 'Returns one mantainance report based on asked question'
+COMMENT 'Returns one maintenance report based on asked question'
 RETURN (
   SELECT collect_list(full_guide) FROM VECTOR_SEARCH(index => '{catalog}.{schema}.turbine_maintenance_guide_vs_index', query => question, num_results => 1) ) """)
 

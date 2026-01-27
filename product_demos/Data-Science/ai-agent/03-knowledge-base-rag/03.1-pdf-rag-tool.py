@@ -2,11 +2,11 @@
 # MAGIC %md
 # MAGIC # Building a knowledge base from PDF documentation using Databricks Vector search (RAG)
 # MAGIC
-# MAGIC As we saw before, our agent isn't working well when it comes to answer specific, technical questions such as WIFI router error code.
+# MAGIC As we saw before, our agent isn't working well when it comes to answering specific, technical questions such as WIFI router error codes.
 # MAGIC
 # MAGIC That's because it doesn't have any knowledge about our internal systems and product. 
 # MAGIC
-# MAGIC Thanksfully, all this information is available to us as PDF. These pdf are stored in our volume. 
+# MAGIC Thankfully, all this information is available to us as PDFs. These PDFs are stored in our volume. 
 # MAGIC
 # MAGIC We'll parse them and save them in our Vector Search, and then add a retriever to our agent to improve its capabilities!
 # MAGIC
@@ -404,7 +404,7 @@ if len(agents.get_deployments(model_name=UC_MODEL_NAME, model_version=uc_registe
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## Next: deploy our chatbout within a Databricks Application
+# MAGIC ## Next: deploy our chatbot within a Databricks Application
 # MAGIC
 # MAGIC Now that our agent is ready, let's deploy a GradIO application to serve its content to our end users. 
 # MAGIC

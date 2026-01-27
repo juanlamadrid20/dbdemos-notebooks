@@ -6,17 +6,17 @@
 # MAGIC
 # MAGIC All our assets are ready. We now need to define when we want our SDP pipeline to kick in and refresh the tables.
 # MAGIC
-# MAGIC One option is to switch SDP pipeline in continuous mode to have a streaming pipeline, providing near-realtime insight.
+# MAGIC One option is to switch SDP pipeline in continuous mode to have a streaming pipeline, providing near-real-time insight.
 # MAGIC
 # MAGIC An alternative is to wakeup the SDP pipeline every X hours, ingest the new data (incremental) and shut down all your compute. 
 # MAGIC
 # MAGIC This is a simple configuration offering a tradeoff between uptime and ingestion latencies.
 # MAGIC
-# MAGIC In our case, we decided that the best tradoff is to ingest new data every hours:
+# MAGIC In our case, we decided that the best tradeoff is to ingest new data every hour:
 # MAGIC
 # MAGIC - Start the SDP pipeline to ingest new data and refresh our tables
 # MAGIC - Refresh the DBSQL dashboard (and potentially notify downstream applications)
-# MAGIC - Retrain our model to include the lastest date and capture potential behavior change
+# MAGIC - Retrain our model to include the latest data and capture potential behavior change
 # MAGIC
 # MAGIC <!-- Collect usage data (view). Remove it to disable collection. View README for more details.  -->
 # MAGIC <img width="1px" src="https://ppxrzfxige.execute-api.us-west-2.amazonaws.com/v1/analytics?category=lakehouse&notebook=05-Workflow-orchestration-fsi-fraud&demo_name=lakehouse-fsi-fraud-detection&event=VIEW">

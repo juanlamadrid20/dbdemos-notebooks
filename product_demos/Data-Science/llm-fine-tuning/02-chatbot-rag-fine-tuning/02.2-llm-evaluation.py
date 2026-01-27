@@ -4,7 +4,7 @@
 # MAGIC
 # MAGIC In the previous notebook, we saw how Databricks simplifies LLM Fine-tuning.
 # MAGIC
-# MAGIC While fine-tuning is a simple API call, you need to evaluate how your new LLM behave. This is critical to assess if the fine tuning helped in the right way, and also key to understanding how you can improve your fine-tuning dataset and detect potential gaps.
+# MAGIC While fine-tuning is a simple API call, you need to evaluate how your new LLM behaves. This is critical to assess if the fine tuning helped in the right way, and also key to understanding how you can improve your fine-tuning dataset and detect potential gaps.
 # MAGIC
 # MAGIC
 # MAGIC Databricks leverages MLFlow and its new LLM capabilities. We will be comparing the plain/base Foundation Model versus the fine tuned one across different metrics.
@@ -170,7 +170,7 @@ fine_tuned_results = eval_llm(serving_endpoint_ft_name, eval_dataset, llm_judge 
 
 # DBTITLE 1,Cancel Run Llama Python
 # MAGIC %md
-# MAGIC ## 3/ Using MLFlow experiment UI to analyse our runs
+# MAGIC ## 3/ Using MLFlow experiment UI to analyze our runs
 # MAGIC
 # MAGIC MLFlow will automatically collect the stats for us.
 # MAGIC
@@ -185,10 +185,10 @@ fine_tuned_results = eval_llm(serving_endpoint_ft_name, eval_dataset, llm_judge 
 
 # COMMAND ----------
 
-# MAGIC %md 
-# MAGIC You can also analyse individual queries and filter on the question with very incorrect answer, and improve your training dataset accordingly.
+# MAGIC %md
+# MAGIC You can also analyze individual queries and filter on the questions with very incorrect answers, and improve your training dataset accordingly.
 # MAGIC
-# MAGIC If you have a bigger dataset, you can also programatically filter on the rows having bad answer, and ask an external model such as a Llama model to summarize what is not working to give you insights on your training dataset at scale!
+# MAGIC If you have a bigger dataset, you can also programmatically filter on the rows having bad answers, and ask an external model such as a Llama model to summarize what is not working to give you insights on your training dataset at scale!
 
 # COMMAND ----------
 

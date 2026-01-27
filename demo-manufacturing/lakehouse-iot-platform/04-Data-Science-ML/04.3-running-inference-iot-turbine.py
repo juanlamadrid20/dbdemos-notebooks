@@ -7,7 +7,7 @@
 # MAGIC
 # MAGIC All we need to do now is use this model to run Inferences. A simple solution is to share the model name to our Data Engineering team and they'll be able to call this model within the pipeline they maintained. That's what we did in our Spark Declarative Pipelines pipeline!
 # MAGIC
-# MAGIC Alternatively, this can be schedule in a separate job. Here is an example to show you how MLFlow can be directly used to retriver the model and run inferences.
+# MAGIC Alternatively, this can be schedule in a separate job. Here is an example to show you how MLFlow can be directly used to retrieve the model and run inferences.
 # MAGIC
 # MAGIC *Make sure you run the previous notebook to be able to access the data.*
 # MAGIC
@@ -111,7 +111,7 @@ display(df)
 # MAGIC
 # MAGIC Databricks also provides serverless serving.
 # MAGIC
-# MAGIC Click on model Serving, enable realtime serverless and your endpoint will be created, providing serving over REST api within a Click.
+# MAGIC Click on model Serving, enable real-time serverless and your endpoint will be created, providing serving over REST API within a click.
 # MAGIC
 # MAGIC Databricks Serverless offer autoscaling, including downscaling to zero when you don't have any traffic to offer best-in-class TCO while keeping low-latencies model serving.
 
@@ -120,9 +120,9 @@ display(df)
 # MAGIC %md
 # MAGIC ## Real time model inference
 # MAGIC
-# MAGIC Let's now deploy our model behind a realtime model serving endpoint.
+# MAGIC Let's now deploy our model behind a real-time model serving endpoint.
 # MAGIC
-# MAGIC We'll then use this endpoint in our GenAI Agentic demo to be able to fetch a turbine status in realtime
+# MAGIC We'll then use this endpoint in our GenAI Agentic demo to be able to fetch a turbine status in real-time
 # MAGIC
 
 # COMMAND ----------
@@ -227,7 +227,7 @@ dataset = spark.table(f'turbine_hourly_features').select(*columns).limit(3).toPa
 # MAGIC
 # MAGIC ## Automate action to react on potential turbine failure
 # MAGIC
-# MAGIC We now have an end 2 end data pipeline analizing and predicting churn. We can now easily trigger actions to reduce downtime, such as dispatching a team earlier to fix the issue before an actual outage!
+# MAGIC We now have an end 2 end data pipeline analyzing and predicting failures. We can now easily trigger actions to reduce downtime, such as dispatching a team earlier to fix the issue before an actual outage!
 # MAGIC
 # MAGIC ## Track windturbine failure and impact
 # MAGIC

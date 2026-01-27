@@ -42,7 +42,7 @@
 # MAGIC %md-sandbox
 # MAGIC ## Building a Spark Data pipeline with Delta Lake
 # MAGIC
-# MAGIC In this example, we'll implement a end 2 end pipeline consuming our IOT sources. We'll use the medaillon architecture but could build a star schema, data vault or any other modelisation.
+# MAGIC In this example, we'll implement an end-to-end pipeline consuming our IOT sources. We'll use the medallion architecture but could build a star schema, data vault or any other model.
 # MAGIC
 # MAGIC
 # MAGIC
@@ -52,7 +52,7 @@
 # MAGIC  * Running DELETE/UPDATE/MERGE over files
 # MAGIC  * Governance & schema evolution
 # MAGIC  * Performance ingesting millions of small files on cloud buckets
-# MAGIC  * Processing & analysing unstructured data (image, video...)
+# MAGIC  * Processing & analyzing unstructured data (image, video...)
 # MAGIC  * Switching between batch or streaming depending of your requirement...
 # MAGIC
 # MAGIC ## Solving these challenges with Delta Lake
@@ -191,7 +191,7 @@ df.plot(x="timestamp", y=["sensor_F", "sensor_E"], kind="line")
 # MAGIC
 # MAGIC We can chain these incremental transformation between tables, consuming only new data.
 # MAGIC
-# MAGIC This can be triggered in near realtime, or in batch fashion, for example as a job running every night to consume daily data.
+# MAGIC This can be triggered in near real-time, or in batch fashion, for example as a job running every night to consume daily data.
 
 # COMMAND ----------
 
@@ -221,7 +221,7 @@ display(spark.table("spark_sensor_hourly"))
 # MAGIC
 # MAGIC We can chain these incremental transformation between tables, consuming only new data.
 # MAGIC
-# MAGIC This can be triggered in near realtime, or in batch fashion, for example as a job running every night to consume daily data.
+# MAGIC This can be triggered in near real-time, or in batch fashion, for example as a job running every night to consume daily data.
 
 # COMMAND ----------
 
@@ -239,13 +239,13 @@ display(spark.table("spark_turbine_training_dataset"))
 
 # MAGIC %md-sandbox
 # MAGIC
-# MAGIC ## ![](https://pages.databricks.com/rs/094-YMS-629/images/delta-lake-tiny-logo.png) 4/ Call the ML model and get realtime turbine metrics
+# MAGIC ## ![](https://pages.databricks.com/rs/094-YMS-629/images/delta-lake-tiny-logo.png) 4/ Call the ML model and get real-time turbine metrics
 # MAGIC
 # MAGIC <img width="700px" style="float:right" src="https://github.com/databricks-demos/dbdemos-resources/raw/main/images/manufacturing/lakehouse-iot-turbine/lakehouse-manuf-iot-turbine-spark-4.png"/>
 # MAGIC
 # MAGIC We can chain these incremental transformation between tables, consuming only new data.
 # MAGIC
-# MAGIC This can be triggered in near realtime, or in batch fashion, for example as a job running every night to consume daily data.
+# MAGIC This can be triggered in near real-time, or in batch fashion, for example as a job running every night to consume daily data.
 
 # COMMAND ----------
 

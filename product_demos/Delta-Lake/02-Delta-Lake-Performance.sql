@@ -158,7 +158,7 @@ VACUUM user_clustering;
 -- MAGIC
 -- MAGIC Adding data to the table results in new file creation, and your table can quickly have way too many small files which is going to impact performances over time.
 -- MAGIC
--- MAGIC This becomes expecially true with streaming operation where you add new data every few seconds, in near realtime.
+-- MAGIC This becomes especially true with streaming operation where you add new data every few seconds, in near real-time.
 -- MAGIC
 -- MAGIC Just like for Liquid Clusteing, Delta Lake solves this operation with the `OPTIMIZE` command, which is going to optimize the file layout for you, picking the proper file size based on heuristics. As no Cluster are defined, this will simply compact the files.
 

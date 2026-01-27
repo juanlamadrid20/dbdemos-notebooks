@@ -36,7 +36,7 @@
 -- MAGIC In this example, we'll synchronize data from the Customers table in our MySQL database.
 -- MAGIC
 -- MAGIC - We extract the changes from our transactional database using Debezium or any other tool and save them in a cloud object storage (S3 folder, ADLS, GCS).
--- MAGIC - Using Autoloader we incrementally load the messages from cloud object storage, and stores the raw messages them in the `customers_cdc`. Autoloader will take care of infering the schema and handling schema evolution for us.
+-- MAGIC - Using Autoloader we incrementally load the messages from cloud object storage, and stores the raw messages them in the `customers_cdc`. Autoloader will take care of inferring the schema and handling schema evolution for us.
 -- MAGIC - Then we'll add a view `customers_cdc_clean` to check the quality of our data, using expectation, and then build dashboards to track data quality. As example the ID should never be null as we'll use it to run our upsert operations.
 -- MAGIC - Finally we perform the APPLY CHANGES INTO (doing the upserts) on the cleaned cdc data to apply the changes to the final `customers` table
 -- MAGIC - Extra: we'll also see how Spark Declarative Pipelines can simply create Slowly Changing Dimention of type 2 (SCD2) to keep track of all the changes 
@@ -131,7 +131,7 @@
 -- MAGIC
 -- MAGIC This is non trivial to implement manually. You need to consider things like data deduplication to keep the most recent row.
 -- MAGIC
--- MAGIC Thanksfully Spark Declarative Pipelines solve theses challenges out of the box with the `APPLY CHANGE` operation
+-- MAGIC Thanksfully Spark Declarative Pipelines solves these challenges out of the box with the `APPLY CHANGE` operation
 
 -- COMMAND ----------
 
@@ -155,7 +155,7 @@
 -- MAGIC Things get especially complex to implement if you have out of order events. If you need to sequence your changes by a timestamp and receive a modification which happened in the past, then you not only need to append a new entry in your SCD table, but also update the previous entries.  
 -- MAGIC
 -- MAGIC Delta
--- MAGIC  Live Table makes all this logic super simple and let you create a separate table containing all the modifications, from the begining of the time. This table can then be used at scale, with specific partitions / zorder columns if required. Out of order fields will be handled out of the box based on the _sequence_by 
+-- MAGIC  Live Table makes all this logic super simple and let you create a separate table containing all the modifications, from the beginning of the time. This table can then be used at scale, with specific partitions / zorder columns if required. Out of order fields will be handled out of the box based on the _sequence_by 
 -- MAGIC
 -- MAGIC To create a SCD2 table, all we have to do is leverage the `APPLY CHANGES` with the extra option: `STORED AS {SCD TYPE 1 | SCD TYPE 2 [WITH {TIMESTAMP|VERSION}}]`
 -- MAGIC

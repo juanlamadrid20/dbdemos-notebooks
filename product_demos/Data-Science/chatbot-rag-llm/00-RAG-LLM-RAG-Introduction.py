@@ -24,7 +24,7 @@
 # MAGIC %md
 # MAGIC # Deploy Your LLM Chatbots with Mosaic AI Agent Evaluation and Lakehouse Applications
 # MAGIC
-# MAGIC In this tutorial, you will learn how to build your own Chatbot Assisstant to help your customers answer questions about Databricks, using Retrieval Augmented Generation (RAG), Databricks State of The Art LLM DBRX Instruct Foundation Model Vector Search.
+# MAGIC In this tutorial, you will learn how to build your own Chatbot Assistant to help your customers answer questions about Databricks, using Retrieval Augmented Generation (RAG), Databricks State of The Art LLM DBRX Instruct Foundation Model Vector Search.
 # MAGIC
 # MAGIC <!-- Collect usage data (view). Remove it to disable collection or disable tracker during installation. View README for more details.  -->
 # MAGIC <img width="1px" src="https://ppxrzfxige.execute-api.us-west-2.amazonaws.com/v1/analytics?category=data-science&notebook=00-RAG-LLM-RAG-Introduction&demo_name=chatbot-rag-llm&event=VIEW">
@@ -161,7 +161,7 @@
 # COMMAND ----------
 
 # MAGIC %md 
-# MAGIC Learn more adavanced GenAI concepts: [open the 03-advanced-app/01-PDF-Advanced-Data-Preparation]($./03-advanced-app/01-PDF-Advanced-Data-Preparation).
+# MAGIC Learn more advanced GenAI concepts: [open the 03-advanced-app/01-PDF-Advanced-Data-Preparation]($./03-advanced-app/01-PDF-Advanced-Data-Preparation).
 
 # COMMAND ----------
 

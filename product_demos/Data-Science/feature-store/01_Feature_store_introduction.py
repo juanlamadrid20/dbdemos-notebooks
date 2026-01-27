@@ -8,7 +8,7 @@
 # MAGIC - Share features across your organization 
 # MAGIC - Increase discoverability sharing 
 # MAGIC - Ensures that the same feature computation code is used for model training and inference
-# MAGIC - Enable real-time backend, leveraging your Delta Lake tables for batch training and Key-Value store for realtime inferences
+# MAGIC - Enable real-time backend, leveraging your Delta Lake tables for batch training and Key-Value store for real-time inferences
 # MAGIC
 # MAGIC ## Demo content
 # MAGIC
@@ -90,7 +90,7 @@
 # COMMAND ----------
 
 # MAGIC %md 
-# MAGIC Note that a Data Sciencist would typically start by exploring the data. We could also use the data profiler integrated into Databricks Notebooks to quickly identify if we have missings values or a skew in our data.
+# MAGIC Note that a Data Scientist would typically start by exploring the data. We could also use the data profiler integrated into Databricks Notebooks to quickly identify if we have missing values or a skew in our data.
 # MAGIC
 # MAGIC *We will keep this part simple as we'll focus on feature engineering*
 
@@ -185,7 +185,7 @@ fe.create_table(
     primary_keys=["destination_id"],
     df=df,
     description="Travel purchases dataset with feature engineering"
-    # you can also attach tags to specifiy the team
+    # you can also attach tags to specify the team
     #,tags={"team":"data_science"}
 )
 
@@ -356,7 +356,7 @@ display(training_pd)
 # MAGIC
 # MAGIC Note that for our first basic example, the feature used are very limited and our model will very likely not be efficient, but we won't focus on the model performance.
 # MAGIC
-# MAGIC The following steps will be a basic LGBM model. Note that to log the model, we'll use the `FeatureEngineeringClient.log_model(...)` function and not the usual `mlflow.skearn.log_model(...)`. This will capture all the feature dependencies & lineage for us and update the feature table data.
+# MAGIC The following steps will be a basic LGBM model. Note that to log the model, we'll use the `FeatureEngineeringClient.log_model(...)` function and not the usual `mlflow.sklearn.log_model(...)`. This will capture all the feature dependencies & lineage for us and update the feature table data.
 
 # COMMAND ----------
 
@@ -464,9 +464,9 @@ print(f"Model logged in MLflow and registered in UC: {model_full_name}")
 # MAGIC
 # MAGIC Because we used the `registered_model_name` parameter, our model was automatically added to the registry. 
 # MAGIC
-# MAGIC We can now chose to move it in Production. 
+# MAGIC We can now choose to move it to Production. 
 # MAGIC
-# MAGIC *Note that a typical ML pipeline would first run some tests & validation before doing moving the model as Production. We'll skip this step to focus on the Feature Engineering capabilities*
+# MAGIC *Note that a typical ML pipeline would first run some tests & validation before moving the model to Production. We'll skip this step to focus on the Feature Engineering capabilities*
 
 # COMMAND ----------
 
@@ -496,7 +496,7 @@ if len(latest_model.aliases) == 0 or latest_model.aliases[0] != production_alias
 # MAGIC
 # MAGIC In a real world setup, we would receive new data from our customers and have our job incrementally refreshing our customer features running in parallel. 
 # MAGIC
-# MAGIC To make the predictions, all we need to have is the primary keys for each feature loopup table. Feature Engineering in UC will automatically do the lookup for us as defined in the training steps.
+# MAGIC To make the predictions, all we need to have is the primary keys for each feature lookup table. Feature Engineering in UC will automatically do the lookup for us as defined in the training steps.
 # MAGIC
 # MAGIC This is one of the great outcome using the Feature Engineering in UC: you know that your features will be used the same way for inference as training because it's being saved with your feature store metadata.
 # MAGIC
@@ -528,7 +528,7 @@ display(scored_df)
 # MAGIC
 # MAGIC Databricks Feature Engineering in Unity Catalog brings you a full traceability, knowing which model is using which feature in which notebook/job.
 # MAGIC
-# MAGIC It also simplify inferences by always making sure the same features will be used for model training and inference, always querying the same feature table based on your lookup keys.
+# MAGIC It also simplifies inferences by always making sure the same features will be used for model training and inference, always querying the same feature table based on your lookup keys.
 # MAGIC
 # MAGIC
 # MAGIC ## Next Steps 

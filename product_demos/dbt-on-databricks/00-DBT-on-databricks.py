@@ -21,7 +21,7 @@
 # MAGIC By leveraging Databricks SQL warehouse, you will get the best TCO for ETL, leveraging our engine (photon) for blazing fast transformation. 
 # MAGIC
 # MAGIC
-# MAGIC ## Ingesting data for C360 platfom
+# MAGIC ## Ingesting data for C360 platform
 # MAGIC
 # MAGIC This demo replicate the Spark Declarative Pipelines ingestion pipeline available in the Lakehouse C360 platform demo `dbdemos.install('lakehouse-retail-c360')`
 # MAGIC
@@ -29,8 +29,8 @@
 # MAGIC
 # MAGIC We have 3 data sources sending new files in our blob storage (/demos/retail/churn/) and we want to incrementally load this data into our Datawarehousing tables:
 # MAGIC
-# MAGIC - Customer profile data (name, age, adress etc)
-# MAGIC - Orders history (what our customer bough over time)
+# MAGIC - Customer profile data (name, age, address etc)
+# MAGIC - Orders history (what our customer bought over time)
 # MAGIC - Streaming Events from our application (when was the last time customers used the application, typically a stream from a Kafka queue)
 
 # COMMAND ----------
@@ -102,9 +102,9 @@
 # MAGIC
 # MAGIC <iframe style="float:right; margin-left: 20px" width="560" height="315" src="https://www.youtube.com/embed/12wOO88ZEJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 # MAGIC
-# MAGIC dbt cloud helps team developping dbt pipelines faster. Once your pipeline is ready in dbt cloud, you can easily launch it in your Databricks Lakehouse with one of the best TCO.
+# MAGIC dbt cloud helps teams develop dbt pipelines faster. Once your pipeline is ready in dbt cloud, you can easily launch it in your Databricks Lakehouse with one of the best TCO.
 # MAGIC
-# MAGIC The integration between dbt Cloud and Databricks is available out of the boxin the Partner Connect menu (bottom left of your screen).
+# MAGIC The integration between dbt Cloud and Databricks is available out of the box in the Partner Connect menu (bottom left of your screen).
 # MAGIC
 # MAGIC You'll find all the required information to setup the connection between dbt Cloud and Databricks warehouse endpoints
 # MAGIC
@@ -118,7 +118,7 @@
 # MAGIC Spark Declarative Pipelines is a declarative framework build by Databricks. It can also be used to build data pipeline within Databricks and provides among other:
 # MAGIC
 # MAGIC  - Ingestion capabilities to ingest data from any sources within your pipeline (no need for external step)
-# MAGIC  - Out of the box streaming capabilities for near-realtime inferences
+# MAGIC  - Out of the box streaming capabilities for near-real-time inferences
 # MAGIC  - Incremental support: ingest and transform new data as they come 
 # MAGIC  - Advanced capabilities (simple Change Data Capture, SCDT2 etc)
 # MAGIC

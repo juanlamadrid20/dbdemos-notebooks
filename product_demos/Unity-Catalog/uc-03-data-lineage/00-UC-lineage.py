@@ -117,7 +117,7 @@ dinner_price.write.mode("overwrite").saveAsTable("dinner_price")
 # MAGIC %md
 # MAGIC ## 4/ Visualize Table Lineage
 # MAGIC
-# MAGIC The Table lineage can be visualized by folowing the steps below:
+# MAGIC The Table lineage can be visualized by following the steps below:
 # MAGIC
 # MAGIC 1. Select the `Catalog` explorer icon 
 # MAGIC <img src="https://github.com/databricks-demos/dbdemos-resources/blob/main/icon/catalog-explorer-icon.png?raw=true" width="25"/> on the navigation bar to the left.
@@ -158,9 +158,9 @@ dinner_price.write.mode("overwrite").saveAsTable("dinner_price")
 # MAGIC %md 
 # MAGIC # Conclusion
 # MAGIC
-# MAGIC Databricks Unity Catalog let you track data lineage out of the box.
+# MAGIC Databricks Unity Catalog lets you track data lineage out of the box.
 # MAGIC
-# MAGIC No extra setup required, just read and write from your table and the engine will build the dependencies for you. Lineage can work at a table level but also at the column level, which provide a powerful tool to track dependencies on sensible data.
+# MAGIC No extra setup required, just read and write from your table and the engine will build the dependencies for you. Lineage can work at a table level but also at the column level, which provide a powerful tool to track dependencies on sensitive data.
 # MAGIC
 # MAGIC Lineage can also show you the potential impact updating a table/column and find who will be impacted downstream.
 

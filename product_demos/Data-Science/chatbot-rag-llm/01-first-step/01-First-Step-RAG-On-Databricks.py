@@ -37,7 +37,7 @@
 # MAGIC
 # MAGIC ## 1.1/ Data preparation for RAG: building and indexing our knowledge base into Databricks Vector Search
 # MAGIC
-# MAGIC Let's start by prepraing our knowledge database. In this simple first demo, we'll be using data from Databricks Documentation already prepared and chuncked.
+# MAGIC Let's start by preparing our knowledge database. In this simple first demo, we'll be using data from Databricks Documentation already prepared and chunked.
 # MAGIC
 # MAGIC <!-- Collect usage data (view). Remove it to disable collection or disable tracker during installation. View README for more details.  -->
 # MAGIC <img width="1px" src="https://ppxrzfxige.execute-api.us-west-2.amazonaws.com/v1/analytics?category=data-science&org_id=1444828305810485&notebook=01-First-Step-RAG-On-Databricks&demo_name=chatbot-rag-llm&event=VIEW">
@@ -161,14 +161,14 @@ docs
 # MAGIC
 # MAGIC We've seen how Databricks makes it easy to ingest and prepare your documents, and deploy a Vector Search index on top of it with just clicks.
 # MAGIC
-# MAGIC Now that our Vector Searc index is ready, let's deploy a langchain application.
+# MAGIC Now that our Vector Search index is ready, let's deploy a langchain application.
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## 2.1/ Configuring our Chain parameters
 # MAGIC
-# MAGIC As any appliaction, a RAG chain needs some configuration for each environement (ex: different catalog for test/prod environement). 
+# MAGIC As any application, a RAG chain needs some configuration for each environment (ex: different catalog for test/prod environment). 
 # MAGIC
 # MAGIC Databricks makes this easy with Chain Configurations. You can use this object to configure any value within your app, including the different system prompts and make it easy to test and deploy newer version with better prompt.
 
@@ -425,7 +425,7 @@ print(f"\n\nReview App URL to share with your stakeholders: {deployment_info.rev
 # MAGIC
 # MAGIC Mosaic AI Agent Evaluation evaluates:
 # MAGIC 1. Answer correctness - requires ground truth
-# MAGIC 2. Hallucination / groundness - no ground truth required
+# MAGIC 2. Hallucination / groundedness - no ground truth required
 # MAGIC 3. Answer relevance - no ground truth required
 # MAGIC 4. Retrieval precision - no ground truth required
 # MAGIC 5. (Lack of) Toxicity - no ground truth required

@@ -100,7 +100,7 @@ profile_table_name = monitor_info.profile_metrics_table_name
 # MAGIC
 # MAGIC <br>
 # MAGIC
-# MAGIC We will go ahead and illustrate how you can programatically retrieve the drift metrics and trigger model retraining.
+# MAGIC We will go ahead and illustrate how you can programmatically retrieve the drift metrics and trigger model retraining.
 # MAGIC
 # MAGIC However, it is worthwhile to mention that by inspecting the confusion matrix in the monitoring dashboard, we can see that the latest labelled data only has the `Yes` label. i.e. all customers have churned. This is an unlikely scenario. That should lead us to question whether labelling was done correctly, or if there were data quality issues upstream. These causes of label drift do not necessitate model retraining.
 # MAGIC

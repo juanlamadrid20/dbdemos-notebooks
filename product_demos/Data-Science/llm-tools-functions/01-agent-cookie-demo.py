@@ -10,9 +10,9 @@
 # MAGIC
 # MAGIC <a href="https://youtu.be/UfbyzK488Hk?si=qzMgcSjcBhXOnDBz&t=3496" target="_blank"><img style="float:right; padding: 20px" width="500px" src="https://github.com/databricks-demos/dbdemos-resources/blob/main/images/product/llm-tools-functions/llm-tools-cookie-video.png?raw=true" ></a>
 # MAGIC
-# MAGIC In this notebook, we're going to see how to create a compound AI system to analyze your data and make recommendation on what to publish in your Instagram web campaign, based on your own customer reviews!
+# MAGIC In this notebook, we're going to see how to create a compound AI system to analyze your data and make recommendations on what to publish in your Instagram web campaign, based on your own customer reviews!
 # MAGIC
-# MAGIC we will:
+# MAGIC We will:
 # MAGIC - Create simple SQL functions to analyze your data and registering them in UC
 # MAGIC - Creating more advanced python functions in UC
 # MAGIC - Use Langchain to bind these functions as tools 
@@ -55,7 +55,7 @@
 # MAGIC *Note: the cookie data now exists in the marketplace, feel free to pull it from here.*
 # MAGIC
 # MAGIC #### Let's focus on the main tables
-# MAGIC - **sales.franchises** - Contains information about all our business franchises (store name, location, country, size, ect).   
+# MAGIC - **sales.franchises** - Contains information about all our business franchises (store name, location, country, size, etc).   
 # MAGIC - **sales.transactions** - Contains sales data for all franchises.
 # MAGIC - **media.customer_reviews** - Social media reviews for a bunch of different franchises.   
 
@@ -184,7 +184,7 @@
 # MAGIC %md
 # MAGIC ### 4/ DIY: Create your own Agent chaining the tools with Langchain
 # MAGIC
-# MAGIC In this step, we're going to define three cruicial parts of our agent:
+# MAGIC In this step, we're going to define three crucial parts of our agent:
 # MAGIC - Tools for the Agent to use
 # MAGIC - LLM to serve as the agent's "brains"
 # MAGIC - System prompt that defines guidelines for the agent's tasks

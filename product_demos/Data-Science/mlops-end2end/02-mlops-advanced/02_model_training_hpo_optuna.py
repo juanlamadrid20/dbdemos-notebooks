@@ -262,7 +262,7 @@ preprocessor = ColumnTransformer(transformers, remainder="drop", sparse_threshol
 # MAGIC %md
 # MAGIC ## Scaling up Hyper-Parameter-Optimization (HPO) with Optuna, Spark and MLflow
 # MAGIC
-# MAGIC Optuna is an advanced hyperparameter optimization framework designed specifically for machine learning tasks. Here are the key ways Optuna conducts hyperparameter optimization primarly via:
+# MAGIC Optuna is an advanced hyperparameter optimization framework designed specifically for machine learning tasks. Here are the key ways Optuna conducts hyperparameter optimization primarily via:
 # MAGIC
 # MAGIC 1. Sampling Algorithms:
 # MAGIC     1. **Tree-structured Parzen Estimator (Default)** - Bayesian optimization to efficiently search the hyperparameter space.

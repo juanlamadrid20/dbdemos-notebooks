@@ -6,17 +6,17 @@
 # MAGIC
 # MAGIC All our assets are ready. We now need to define when we want our SDP pipeline to kick in and refresh the tables.
 # MAGIC
-# MAGIC One option is to switch SDP pipeline in continuous mode to have a streaming pipeline, providing near-realtime insight.
+# MAGIC One option is to switch SDP pipeline in continuous mode to have a streaming pipeline, providing near-real-time insight.
 # MAGIC
 # MAGIC An alternative is to wakeup the SDP pipeline every X hours, ingest the new data (incremental) and shut down all your compute. 
 # MAGIC
 # MAGIC This is a simple configuration offering a tradeoff between uptime and ingestion latencies.
 # MAGIC
-# MAGIC In our case, we decided that the best trade-off is to ingest new data every hours:
+# MAGIC In our case, we decided that the best trade-off is to ingest new data every hour:
 # MAGIC
 # MAGIC - Start the SDP pipeline to ingest new data and refresh our tables
 # MAGIC - Refresh the DBSQL dashboard (and potentially notify downstream applications)
-# MAGIC - Retrain our model to include the lastest date and capture potential behavior change
+# MAGIC - Retrain our model to include the latest data and capture potential behavior change
 # MAGIC
 # MAGIC <!-- Collect usage data (view). Remove it to disable collection. View README for more details.  -->
 # MAGIC <img width="1px" src="https://www.google-analytics.com/collect?v=1&gtm=GTM-NKQ8TT7&tid=UA-163989034-1&cid=555&aip=1&t=event&ec=field_demos&ea=display&dp=%2F42_field_demos%2Fretail%2Flakehouse_churn%2Fworkflow&dt=LAKEHOUSE_RETAIL_CHURN">

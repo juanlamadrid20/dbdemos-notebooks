@@ -225,9 +225,9 @@ SELECT * FROM transactions ;
 -- COMMAND ----------
 
 -- MAGIC %md
--- MAGIC ### Programatically migrating existing database (under `hive_metastore`) to UC
+-- MAGIC ### Programmatically migrating existing database (under `hive_metastore`) to UC
 -- MAGIC
--- MAGIC Let's see how we can take this one step further and programatically upgrade an entire database at once.
+-- MAGIC Let's see how we can take this one step further and programmatically upgrade an entire database at once.
 -- MAGIC
 -- MAGIC We need a script that will automatically detect the table type (External or Managed) to pick our upgrade strategy:
 -- MAGIC

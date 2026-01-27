@@ -166,7 +166,7 @@ model_config = mlflow.models.ModelConfig(development_config='rag_chain_config.ya
 # MAGIC prompt = ChatPromptTemplate.from_messages(
 # MAGIC     [
 # MAGIC         ("system", llm_config.get("llm_prompt_template")),
-# MAGIC         # Note: This chain does not compress the history, so very long converastions can overflow the context window.
+# MAGIC         # Note: This chain does not compress the history, so very long conversations can overflow the context window.
 # MAGIC         MessagesPlaceholder(variable_name="formatted_chat_history"),
 # MAGIC         # User's most current question
 # MAGIC         ("user", "{question}"),
@@ -174,7 +174,7 @@ model_config = mlflow.models.ModelConfig(development_config='rag_chain_config.ya
 # MAGIC )
 # MAGIC
 # MAGIC
-# MAGIC # Format the converastion history to fit into the prompt template above.
+# MAGIC # Format the conversation history to fit into the prompt template above.
 # MAGIC def format_chat_history_for_prompt(chat_messages_array):
 # MAGIC     history = extract_chat_history(chat_messages_array)
 # MAGIC     formatted_chat_history = []
@@ -187,7 +187,7 @@ model_config = mlflow.models.ModelConfig(development_config='rag_chain_config.ya
 # MAGIC     return formatted_chat_history
 # MAGIC
 # MAGIC
-# MAGIC # Prompt Template for query rewriting to allow converastion history to work - this will translate a query such as "how does it work?" after a question such as "what is spark?" to "how does spark work?".
+# MAGIC # Prompt Template for query rewriting to allow conversation history to work - this will translate a query such as "how does it work?" after a question such as "what is spark?" to "how does spark work?".
 # MAGIC query_rewrite_template = """Based on the chat history below, we want you to generate a query for an external data source to retrieve relevant documents so that we can better answer the question. The query should be in natural language. The external data source uses similarity search to search for relevant documents in a vector space. So the query should be similar to the relevant documents semantically. Answer with only the query. Do not add explanation.
 # MAGIC
 # MAGIC Chat history: {chat_history}
@@ -329,7 +329,7 @@ print(f"Share this URL with your stakeholders: {deployment_info.review_app_url}"
 # MAGIC
 # MAGIC As you add capabilities to your model and tune the prompt, it will get harder to evaluate your model performance in a repeatable way.
 # MAGIC
-# MAGIC Your new prompt might work well for what you tried to fixed, but could also have impact on other questions.
+# MAGIC Your new prompt might work well for what you tried to fix, but could also have impact on other questions.
 # MAGIC
 # MAGIC ## Next: Introducing offline model evaluation with Mosaic AI Agent Evaluation
 # MAGIC

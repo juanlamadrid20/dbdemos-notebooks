@@ -55,7 +55,7 @@
 # MAGIC %md
 # MAGIC ## Programmatically find best run and push model to Unity Catalog for validation
 # MAGIC
-# MAGIC We have completed the training runs to find a candidate __Challenger__ model. We'll programatically select the best model from our last ML experiment and register it to Unity Catalog. We can easily do that using MLFlow `search_runs` API:
+# MAGIC We have completed the training runs to find a candidate __Challenger__ model. We'll programmatically select the best model from our last ML experiment and register it to Unity Catalog. We can easily do that using MLFlow `search_runs` API:
 
 # COMMAND ----------
 

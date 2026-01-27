@@ -330,7 +330,7 @@ X_test,  y_test  = test_pd.drop("purchased", axis=1),  test_pd["purchased"]
 # MAGIC - Capture full feature lineage from the Feature Store  
 # MAGIC - Register the trained model in **Unity Catalog** for governance and deployment
 # MAGIC
-# MAGIC This approach provides full control over feature engineering, preprocessing, and model selection, and maintaining the same reproducibility and lineage benefits.
+# MAGIC This approach provides full control over feature engineering, preprocessing, and model selection, while maintaining the same reproducibility and lineage benefits.
 # MAGIC
 
 # COMMAND ----------
@@ -521,7 +521,7 @@ display(scored_df.limit(100))
 # MAGIC
 # MAGIC The capacity options correspond to different performance tiers "CU_1", "CU_2", "CU_4", and "CU_8". Each capacity unit allocates about 16GB of RAM to the database instance, along with all associated CPU and local SSD resources.
 # MAGIC
-# MAGIC Once you created the online store, it should be avaiable under Compute -> Lakebase Postgres
+# MAGIC Once you created the online store, it should be available under Compute -> Lakebase Postgres
 # MAGIC
 # MAGIC
 

@@ -286,7 +286,7 @@ for deployment in agents.list_deployments():
 # MAGIC - Simplify Data Ingestion and preparation with Databricks Engineering Capabilities
 # MAGIC - Accelerate Vector Search  deployment with fully managed indexes
 # MAGIC - Leverage Databricks DBRX Instruct foundation model endpoint
-# MAGIC - Deploy realtime model endpoint to perform RAG and provide Q&A capabilities
+# MAGIC - Deploy real-time model endpoint to perform RAG and provide Q&A capabilities
 # MAGIC
 # MAGIC Lakehouse AI is uniquely positioned to accelerate your GenAI deployment.
 # MAGIC

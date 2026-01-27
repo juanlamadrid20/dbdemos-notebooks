@@ -9,7 +9,7 @@
 -- MAGIC
 -- MAGIC The OMOP database is a Common Data Model to harmonize data analysis required for medical product safety surveillance, comparative effectiveness, quality of care, and patient-level predictive modeling.
 -- MAGIC
--- MAGIC Databricks is uniquely positioned to create a leverage this model: not only it provides capabilities to build, ingest and transform the data, but it also let your Data Analyst and Data Scientist team to run advanced analysis on top of it.
+-- MAGIC Databricks is uniquely positioned to create a leverage this model: not only does it provide capabilities to build, ingest and transform the data, but it also let your Data Analyst and Data Scientist team to run advanced analysis on top of it.
 -- MAGIC
 -- MAGIC <br style="clear: both">
 -- MAGIC
@@ -28,7 +28,7 @@
 -- MAGIC
 -- MAGIC In this demo, we will consume raw data artificially generated from Synthea and apply transformations to translate them as OMOP schema.
 -- MAGIC
--- MAGIC *To keep this demo simple, we will only implement a subste of the OMOP data model*
+-- MAGIC *To keep this demo simple, we will only implement a subset of the OMOP data model*
 -- MAGIC
 -- MAGIC <!-- Collect usage data (view). Remove it to disable collection. View README for more details.  -->
 -- MAGIC <img width="1px" src="https://ppxrzfxige.execute-api.us-west-2.amazonaws.com/v1/analytics?category=lakehouse&notebook=01.1-DLT-patient-readmission-SQL&demo_name=lakehouse-patient-readmission&event=VIEW">
@@ -93,7 +93,7 @@
 -- MAGIC
 -- MAGIC ## Building a Spark Declarative Pipelines pipeline to ingest and prepare HLS data with the OMOP model
 -- MAGIC
--- MAGIC In this example, we'll implement an end-to-end SDP pipeline consuming the aforementioned information. We'll use the medaillon architecture but we could build star schema, data vault, or any other modelisation.
+-- MAGIC In this example, we'll implement an end-to-end SDP pipeline consuming the aforementioned information. We'll use the medallion architecture but we could build star schema, data vault, or any other modeling.
 -- MAGIC
 -- MAGIC We'll incrementally load new data with the autoloader, clean and enrich this information.
 -- MAGIC
@@ -159,7 +159,7 @@
 -- MAGIC
 -- MAGIC <img width="650px" style="float:right" src="https://raw.githubusercontent.com/databricks-demos/dbdemos-resources/main/images/hls/patient-readmission/hls-patient-readmision-dlt-3.png"/>
 -- MAGIC
--- MAGIC Finally, let's cbuild our final tables containing clean data that we'll be able to use of to build our cohorts and predict patient risks.
+-- MAGIC Finally, let's build our final tables containing clean data that we'll be able to use of to build our cohorts and predict patient risks.
 -- MAGIC
 -- MAGIC These tables are clean and ready to be used by the BI team!
 -- MAGIC

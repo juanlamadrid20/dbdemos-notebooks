@@ -45,7 +45,7 @@
 # MAGIC
 # MAGIC Let's add a function to retrieve a customer detail based on their email.
 # MAGIC
-# MAGIC *Note: realtime postgres tables could be used to provide low latencies for point-queries like these. However, to keep this demo simple, we'll use a SQL endpoint. Using a SQL endpoint is also a very good way to provide analytics capabilities to your agent!*
+# MAGIC *Note: real-time postgres tables could be used to provide low latencies for point-queries like these. However, to keep this demo simple, we'll use a SQL endpoint. Using a SQL endpoint is also a very good way to provide analytics capabilities to your agent!*
 # MAGIC
 
 # COMMAND ----------
@@ -87,13 +87,13 @@
 
 # MAGIC %md
 # MAGIC
-# MAGIC ## 2. Retrieve all billing informations
-# MAGIC Let's add a function to get all the customer orders and subscriptions. This function will take a customer ID as input and return som aggregation to filter all the past billing informations and current subscriptions.
+# MAGIC ## 2. Retrieve all billing information
+# MAGIC Let's add a function to get all the customer orders and subscriptions. This function will take a customer ID as input and return some aggregation to filter all the past billing information and current subscriptions.
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC CREATE OR REPLACE FUNCTION get_customer_billing_and_subscriptions(customer_id_input BIGINT COMMENT 'customer ID used to retrive orders, billing and subscriptiosn')
+# MAGIC CREATE OR REPLACE FUNCTION get_customer_billing_and_subscriptions(customer_id_input BIGINT COMMENT 'customer ID used to retrieve orders, billing and subscriptions')
 # MAGIC RETURNS TABLE (
 # MAGIC     customer_id BIGINT,
 # MAGIC     subscription_id BIGINT,
@@ -149,7 +149,7 @@
 # MAGIC %md
 # MAGIC
 # MAGIC ## 3. Give the LLM a Python Function to compute Math
-# MAGIC LLMs typically struggle to run any advance math. Let's add a tool to let the LLM compute any math expression, using python directly.
+# MAGIC LLMs typically struggle to run any advanced math. Let's add a tool to let the LLM compute any math expression, using Python directly.
 # MAGIC
 # MAGIC Databricks makes it easy, running safe, sandboxed python functions:
 
